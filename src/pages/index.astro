@@ -1,22 +1,12 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle="Andre Collin - Portfolio / Blog";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Who really is this Andre Collin?</title>
-	</head>
-	<body>
-		<header>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about/">About</a></li>
-			<li><a href="/blog/">Blog</a></li>
-		</ul>
-		</header>
-		<h1>Who really is this Andre Collin?</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h1>{pageTitle}</h1>
+  <p>I'm a software engineering manager and Agile coach/leader who has been building front-end interface and web applications for 25 years. </p>
+  <p>I worked for the Ontario French educational TV channel TFO, led teams as a senior Front-end developer for The City of Toronto. I also had a chance to work for some of the biggest mewspapers like the Globe and Mail, the National Post and all the newspapers owned by Postmedia Network. My passion for tech made me work for Phoenix Geophysics and more recently for Ecobee.</p>
+  <p>You will find more info about me in <a href="/AndreCollinResume2025.pdf">my resume [PDF]</a>.</p>
+  <p>I wrote a few articles about my 5 core values as engineering manager, and about a few topics related to leading a team of software engineers. You're welcome to <a href="/blog">take a look at my blog</a> and let me know what you think!</p>
+  <p>And... YES! I am currently looking for a new challenge!</p>
+</BaseLayout>

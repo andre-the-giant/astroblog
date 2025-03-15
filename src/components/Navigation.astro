@@ -1,0 +1,43 @@
+---
+const navLinks = [
+    {
+        title:"Home",
+        link:"/"
+    },
+    {
+        title:"Blog",
+        link:"/blog",
+    },
+    {
+        title:"Resume [PDF]",
+        link:"/AndreCollinResume2025.pdf"
+    },
+]
+---
+<style>
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display:flex;
+    gap:20px;
+}
+li{
+    margin:0;
+    padding:0;
+}
+a{
+    background-color:black;
+    color:#dedede;
+    text-decoration: none;
+    display:inline-block;
+    padding: 0 .5rem;
+}
+</style>
+<nav>
+    <ul>
+        {navLinks.map(({ title, link }) => (
+            <li><a href={link}>{title}</a></li>
+        ))}
+    </ul>
+</nav>

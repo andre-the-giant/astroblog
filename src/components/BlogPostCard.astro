@@ -1,0 +1,48 @@
+---
+const { url, imgSrc, imgAlt , title, pubDate, description, h_level} = Astro.props;
+const HeadingTag = `h${h_level || 1}`;
+const formattedDate = new Date(pubDate).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+});
+---
+<style>
+    .post-card{
+        list-style: none;
+        display:grid;
+        grid-template-columns: 200px 1fr;
+        gap: .4rem;
+        column-gap: 1rem;
+        margin:0 0 1rem 0
+    }
+    .post-card_img{
+        grid-row: span 4
+    }
+    
+    .post-title{
+        margin:0;
+    }
+    .post-card a{
+        color:#000;
+        text-decoration: none;
+    }
+    img{
+        max-width:100%;
+    }
+    .post-date{
+        font-size:.8rem;
+        margin:0;
+    }
+</style>
+<li class="post-card">
+    <a href={url} class="post-card_img">
+        {imgSrc && <img src={imgSrc} alt={imgAlt || ""} loading="lazy" />}
+    </a>
+    <HeadingTag className="post-title">
+       <a href={url}>{title}</a> 
+    </HeadingTag>
+    <div class="post-date">{formattedDate}</div>
+    <div class="blogContent">{description}</div>
+</li>
