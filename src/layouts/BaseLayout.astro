@@ -41,7 +41,7 @@ const jsonLdData = (isblog=="true")?{
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content={description}>
     <meta name="author" content="Andre Collin">
@@ -59,6 +59,9 @@ const jsonLdData = (isblog=="true")?{
     <meta property="og:url" content={currentUrl}>
     <meta property="og:site_name" content="Andre Collin Portfolio & Blog">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLdData)} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Pirata+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <Navigation></Navigation>
