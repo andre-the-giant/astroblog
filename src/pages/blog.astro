@@ -4,6 +4,8 @@ import { Picture } from 'astro:assets';
 import defaultImage from '../assets/images/default.jpg';
 
 const pageTitle = "My blog";
+const description = "Andre Collin's blog about software engineering, leadership, and agile methodologies."
+
 const imageMap = import.meta.glob('../assets/images/*', { eager: true });
 const resolveImage = (image) => {
   return image && imageMap[`../assets/images/${image.url}`] ? imageMap[`../assets/images/${image.url}`].default : null;};
@@ -41,7 +43,7 @@ allPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter
         margin:0;
     }
 </style>
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle} description={description} isblog="true">
 <ul>
     {allPosts.map((post) => {
         const imagePath = resolveImage(post.frontmatter.image) || defaultImage;

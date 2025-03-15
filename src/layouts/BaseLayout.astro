@@ -1,20 +1,64 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
-const {pageTitle}=Astro.props;
+const {pageTitle,description,isblog,pubdate}=Astro.props;
+const currentUrl = Astro.url.href;
+const baseUrl = Astro.site;
+const ogImage = `${baseUrl}andrecollin.jpg`;
+const published =  pubdate? new Date(pubdate).toISOString().substring(0, 10):"";
+const jsonLdData = (isblog=="true")?{  
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": pageTitle,
+    "description": description,
+    "author": {
+    "@type": "Person",
+    "name": "Andre Collin",
+    "url": baseUrl
+    },
+    "datePublished": published,
+} : {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Andre Collin Portfolio & Blog",
+    "url": baseUrl,
+    "author": {
+        "@type": "Person",
+        "name": "Andre Collin"
+    },
+    "description": "A portfolio and blog about software engineering, leadership, and agile methodologies.",
+    "publisher": {
+        "@type": "Person",
+        "name": "Andre Collin",
+        "logo": {
+            "@type": "ImageObject",
+            "url": ogImage
+        }
+    }
+};
 ---
 
-<html lang="en">  
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Andre Collin's portfolio and blog about software engineering, leadership, and agile methodologies.">
+    <meta name="description" content={description}>
     <meta name="author" content="Andre Collin">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#ffffff"> 
+    <meta name="theme-color" content="#dedede"> 
     <title>{pageTitle}</title>
+
+    <link rel="canonical" href={currentUrl}>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content={pageTitle}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content={ogImage}>
+    <meta property="og:url" content={currentUrl}>
+    <meta property="og:site_name" content="Andre Collin Portfolio & Blog">
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLdData)} />
 </head>
 <body>
     <Navigation></Navigation>
