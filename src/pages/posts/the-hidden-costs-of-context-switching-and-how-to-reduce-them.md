@@ -6,7 +6,7 @@ description: 'Context switching is one of the biggest hidden productivity killer
 image:
     url: 'blogimage6.jpg'
     alt: ''
-tags: [context-switching, software-engineering, productivity, engineering-management, focus, deep-work, cognitive-load, agile, kanban, scrum, task-management, problem-solving, burnout-prevention, team-culture, work-in-progress, efficiency, sprint-planning, leadership, software-development, team-dynamics]
+tags: ["context-switching", "focus", "productivity", "efficiency", "deep-work", "process", "interruptions", "workflow", "cognitive-load", "agility", "task-management", "time-management", "automation", "prioritization", "burnout"]
 ---
 
 Software engineers do their best work when they can focus. Writing good code, solving complex problems, and making thoughtful design decisions require deep concentration. But in many teams, focus is constantly disrupted by context switching. One moment, an engineer is working on a feature, then a bug comes in that needs immediate attention. Just as they get back into the feature, a meeting interrupts them. Later, a product manager asks for a quick estimate on something completely different. By the end of the day, progress feels slow because so much time was spent switching tasks rather than making meaningful progress.

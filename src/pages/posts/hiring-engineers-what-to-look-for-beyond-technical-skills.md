@@ -6,7 +6,7 @@ description: 'Hiring great engineers is about more than just technical skills. C
 image:
     url: 'blogimage11.jpg'
     alt: ''
-tags: [hiring, software-engineering, engineering-management, recruiting, technical-skills, communication, collaboration, team-building, diversity, inclusion, problem-solving, adaptability, ownership, growth-mindset, leadership, interview-process, feedback, learning, decision-making, culture-fit, team-dynamics]
+tags: ["hiring", "recruitment", "team-culture", "communication", "collaboration", "soft-skills", "ownership", "adaptability", "learning", "problem-solving", "bias", "decision-making", "interviews", "growth", "teamwork"]
 ---
 
 Hiring great engineers is about more than just technical ability. Writing clean code, understanding system architecture, and solving technical problems are essential, but they are not the only things that make an engineer a valuable team member.

@@ -6,7 +6,7 @@ description: 'Onboarding can make or break an engineer’s success in a team. A 
 image:
     url: 'blogimage14.jpg'
     alt: ''
-tags: [onboarding, engineering-management, software-engineering, hiring, retention, team-culture, productivity, mentorship, onboarding-buddy, team-dynamics, technical-documentation, new-hires, agile, career-growth, leadership, employee-experience, 30-60-90-plan, learning, feedback, software-development, inclusion]
+tags: ["onboarding", "mentorship", "documentation", "growth", "ramp-up", "efficiency", "team-culture", "expectations", "process", "collaboration", "communication", "psychological-safety", "learning", "hiring", "support"]
 ---
 
 I have seen onboarding make or break an engineer’s success in a team. Some companies do it well, giving new hires the tools, guidance, and space to ramp up confidently. Others drop them into a chaotic environment with little direction, expecting them to "figure it out." The difference between those two approaches is retention, productivity, and overall team morale.

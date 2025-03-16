@@ -2,11 +2,11 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Inclusivity isn’t a buzzword, it’s what makes teams stronger'
 pubDate: 2025-02-26
-description: 'A strong development team isn’t just about technical skills—it’s about inclusivity. When teams are truly inclusive, they foster innovation, improve retention, and create an environment where everyone can thrive.'
+description: 'A strong development team isn’t just about technical skills, it’s about inclusivity. When teams are truly inclusive, they foster innovation, improve retention, and create an environment where everyone can thrive.'
 image:
     url: 'blogimage5.jpg'
     alt: ''
-tags: [inclusivity, diversity, software-engineering, engineering-management, team-culture, equity, fairness, leadership, collaboration, retention, accessibility, hiring, psychological-safety, neurodiversity, respect, workplace-equality, team-dynamics, innovation, empowerment, engineering-leadership, decision-making]
+tags: ["inclusivity", "diversity", "psychological-safety", "equity", "fairness", "leadership", "team-culture", "communication", "mentorship", "bias", "hiring", "teamwork", "collaboration", "growth", "culture"]
 ---
 
 A great development team isn’t just about technical skills. It’s about the people. When a team is truly inclusive, everyone has the same opportunity to contribute, grow, and feel valued. That means more than just hiring a diverse group of people. It means making sure they are treated fairly, supported, and respected, whether they are a junior developer, a senior engineer, or someone sitting in the C-suite.

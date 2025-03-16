@@ -6,7 +6,7 @@ description: 'Accountability in development teams is not about blame but about o
 image:
     url: 'blogimage7.jpg'
     alt: ''
-tags: [accountability, agile, software-engineering, engineering-management, dev-team, leadership, ownership, team-culture, collaboration, continuous-improvement, responsibility, productivity, teamwork, agile-practices, development-process, software-quality, engineering-culture, delivery, communication, problem-solving, cross-functional-teams]
+tags: ["accountability", "agile", "ownership", "teamwork", "collaboration", "quality", "trust", "self-organization", "transparency", "communication", "commitment", "technical-debt", "delivery", "risk-management", "team-culture"]
 ---
 
 

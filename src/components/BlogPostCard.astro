@@ -1,7 +1,12 @@
 ---
-const { url, imgSrc, imgAlt , title, pubDate, description, h_level} = Astro.props;
-const HeadingTag = `h${h_level || 1}`;
-const formattedDate = new Date(pubDate).toLocaleDateString("en-US", {
+import { Picture } from 'astro:assets';
+import defaultImage from '../assets/images/default.jpg';
+const { postdata } = Astro.props;
+const imageMap = import.meta.glob('../assets/images/*', { eager: true });
+const resolveImage = (image) => {
+  return image && imageMap[`../assets/images/${image.url}`] ? imageMap[`../assets/images/${image.url}`].default : null;};
+const imagePath = resolveImage(postdata.frontmatter.image) || defaultImage;
+const formattedDate = new Date(postdata.frontmatter.pubDate).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -18,31 +23,53 @@ const formattedDate = new Date(pubDate).toLocaleDateString("en-US", {
         margin:0 0 1rem 0
     }
     .post-card_img{
-        grid-row: span 4
+        grid-row: span 4;
     }
     
     .post-title{
         margin:0;
     }
-    .post-card a{
-        color:#000;
+    .post-title a{
+        color:rgb(63, 106, 76);
         text-decoration: none;
+        display: block;
     }
     img{
         max-width:100%;
+        height:auto;
+        aspect-ratio: 4 / 3; object-fit: cover;
     }
     .post-date{
         font-size:.8rem;
         margin:0;
     }
+    .tag{
+        display: inline-block;
+        font-size: .7rem;
+        background-color: rgb(63, 106, 76);
+        color:#dedede;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right:.2rem; padding:.1rem .6rem
+    }
 </style>
 <li class="post-card">
-    <a href={url} class="post-card_img">
-        {imgSrc && <img src={imgSrc} alt={imgAlt || ""} loading="lazy" />}
-    </a>
-    <HeadingTag className="post-title">
-       <a href={url}>{title}</a> 
-    </HeadingTag>
-    <div class="post-date">{formattedDate}</div>
-    <div class="blogContent">{description}</div>
+<a href={postdata.url} class="post-card_img" >
+    <Picture src={imagePath} alt={postdata.frontmatter.image.alt}} />
+</a>
+<h2 class="post-title"><a href={postdata.url}>{postdata.frontmatter.title}</a></h2>
+<div class="post-date">{formattedDate}</div>
+<div class="blogContent">{postdata.frontmatter.description}</div>
+<div class="tags">
+{postdata.frontmatter.tags.map((tag) => {
+    // Convert tag to display format: "Proactive Teams"
+    const formattedTag = tag
+    .split('-')  // Split at dashes
+    .join(' '); // Rejoin with spaces
+    return (
+    <a href={`/tags/${tag}`} class="tag">{formattedTag}</a>
+    );
+})}
+</div>
+
 </li>

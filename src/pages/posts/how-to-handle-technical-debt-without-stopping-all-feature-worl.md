@@ -6,7 +6,7 @@ description: 'Technical debt is unavoidable, but managing it well ensures that t
 image:
     url: 'blogimage4.jpg'
     alt: ''
-tags: [technical-debt, software-engineering, engineering-management, agile, feature-development, refactoring, technical-strategy, team-culture, problem-solving, roadmap-planning, code-quality, decision-making, business-alignment, scalability, continuous-improvement, backlog-management, sustainable-development, productivity, leadership, software-maintenance]
+tags: ["tech-debt", "prioritization", "balance", "maintenance", "agility", "problem-solving", "risk-management", "process", "continuous-improvement", "refactoring", "technical-excellence", "sustainability", "ownership", "velocity", "trade-offs"]
 ---
 
 Technical debt is a concept in software development that refers to the shortcuts, outdated code, or inefficiencies that make future development harder. Just like financial debt, technical debt builds up over time and needs to be repaid. The longer it is ignored, the more costly it becomes. This debt can come from quick fixes made to meet deadlines, old systems that no longer fit the company’s needs, or even well-intentioned decisions that did not age well. 

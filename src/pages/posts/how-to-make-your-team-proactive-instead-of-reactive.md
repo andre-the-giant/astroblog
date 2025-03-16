@@ -6,7 +6,7 @@ description: 'Some engineering teams spend their time fixing urgent issues, whil
 image:
     url: 'blogimage12.jpg'
     alt: ''
-tags: [proactive-teams, software-engineering, engineering-management, leadership, team-culture, automation, problem-solving, productivity, tech-debt, continuous-improvement, onboarding, documentation, CI/CD, workflow-optimization, agile, burnout-prevention, developer-experience, psychological-safety, root-cause-analysis, sustainable-work, work-efficiency]
+tags: ["proactivity", "ownership", "risk-management", "process", "continuous-improvement", "problem-solving", "anticipation", "efficiency", "learning", "automation", "decision-making", "team-culture", "velocity", "leadership", "strategy"]
 ---
 
 Some engineering teams spend most of their time putting out fires, fixing urgent issues, and scrambling to meet deadlines. Others anticipate problems, improve processes, and prevent future headaches before they happen. The difference between these two is whether the team is reactive or proactive.

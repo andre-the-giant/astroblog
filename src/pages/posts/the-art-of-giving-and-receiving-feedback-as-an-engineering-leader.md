@@ -6,7 +6,7 @@ description: 'Feedback is a powerful tool for growth, yet many teams struggle wi
 image:
     url: 'blogimage1.jpg'
     alt: ''
-tags: [feedback, engineering-leadership, software-engineering, communication, team-culture, leadership, growth-mindset, collaboration, problem-solving, agile, management-skills, continuous-learning, peer-feedback, performance-reviews, team-alignment, technical-feedback, decision-making, trust-building, professional-development, constructive-criticism]
+tags: ["feedback", "communication", "leadership", "growth", "psychological-safety", "mentorship", "collaboration", "accountability", "performance", "coaching", "trust", "conflict-resolution", "self-improvement", "team-culture", "learning"]
 ---
 
 Feedback is one of the most powerful tools for growth, yet it is often misused or avoided altogether. In a high-performing engineering team, feedback is not just a formality during performance reviews. It is a continuous process that helps engineers grow, aligns expectations, and prevents small issues from escalating into major problems.

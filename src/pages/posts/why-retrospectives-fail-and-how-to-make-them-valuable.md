@@ -6,7 +6,7 @@ description: 'Retrospectives should be one of the most valuable meetings in an a
 image:
     url: 'blogimage2.jpg'
     alt: ''
-tags: [retrospectives, agile, software-engineering, engineering-management, feedback, team-culture, continuous-improvement, problem-solving, psychological-safety, agile-practices, process-improvement, collaboration, meeting-effectiveness, leadership, action-items, team-engagement, decision-making, accountability, team-dynamics, communication]
+tags: ["retrospectives", "agile", "process-improvement", "teamwork", "transparency", "communication", "feedback", "growth", "learning", "ownership", "problem-solving", "team-culture", "facilitation", "leadership", "psychological-safety"]
 ---
 
 ## Retrowhat?!
