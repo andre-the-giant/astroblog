@@ -13,7 +13,7 @@ allPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter
 <ul>
     {allPosts.map((post) => {
         return(
-        <BlogPostCard postdata={post} />
+        <BlogPostCard postdata={post} postcardstyle="blog"  />
     );
       })}
 </ul>

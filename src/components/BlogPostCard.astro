@@ -1,7 +1,7 @@
 ---
 import { Picture } from 'astro:assets';
 import defaultImage from '../assets/images/default.jpg';
-const { postdata } = Astro.props;
+const { postdata, postcardstyle } = Astro.props;
 const imageMap = import.meta.glob('../assets/images/*', { eager: true });
 const resolveImage = (image) => {
   return image && imageMap[`../assets/images/${image.url}`] ? imageMap[`../assets/images/${image.url}`].default : null;};
@@ -16,14 +16,7 @@ const formattedDate = new Date(postdata.frontmatter.pubDate).toLocaleDateString(
 <style>
     .post-card{
         list-style: none;
-        display:grid;
-        grid-template-columns: 200px 1fr;
-        gap: .4rem;
-        column-gap: 1rem;
-        margin:0 0 1rem 0
-    }
-    .post-card_img{
-        grid-row: span 4;
+        margin:0 0 1rem 0;
     }
     
     .post-title{
@@ -52,24 +45,48 @@ const formattedDate = new Date(postdata.frontmatter.pubDate).toLocaleDateString(
         text-transform: uppercase;
         margin-right:.2rem; padding:.1rem .6rem
     }
+
+    @media only screen and (min-width: 634px) {
+
+    .post-card{
+        list-style: none;
+        display:grid;
+        grid-template-columns: 200px 1fr;
+        gap: .4rem;
+        column-gap: 1rem;
+        margin:0 0 1rem 0;
+    }
+    .post-card_img{
+        grid-row: span 4;
+    }
+    }
 </style>
 <li class="post-card">
 <a href={postdata.url} class="post-card_img" >
     <Picture src={imagePath} alt={postdata.frontmatter.image.alt}} />
 </a>
-<h2 class="post-title"><a href={postdata.url}>{postdata.frontmatter.title}</a></h2>
+{postcardstyle === "blog" ? (
+   <h2 class="post-title"><a href={postdata.url}>{postdata.frontmatter.title}</a></h2>
+  ) : (
+  <h3 class="post-title"><a href={postdata.url}>{postdata.frontmatter.title}</a></h3>
+  )}
+  
+
 <div class="post-date">{formattedDate}</div>
 <div class="blogContent">{postdata.frontmatter.description}</div>
-<div class="tags">
-{postdata.frontmatter.tags.map((tag) => {
-    // Convert tag to display format: "Proactive Teams"
-    const formattedTag = tag
-    .split('-')  // Split at dashes
-    .join(' '); // Rejoin with spaces
-    return (
-    <a href={`/tags/${tag}`} class="tag">{formattedTag}</a>
-    );
-})}
-</div>
+{postcardstyle === "blog" && (
+
+    <div class="tags">
+    {postdata.frontmatter.tags.map((tag) => {
+        // Convert tag to display format: "Proactive Teams"
+        const formattedTag = tag
+        .split('-')  // Split at dashes
+        .join(' '); // Rejoin with spaces
+        return (
+        <a href={`/tags/${tag}`} class="tag">{formattedTag}</a>
+        );
+    })}
+    </div>
+)}
 
 </li>
