@@ -1,20 +1,27 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
-const {pageTitle,description,isblog,pubdate}=Astro.props;
+const {pageTitle,description,isblog, pubdate, imagepath}=Astro.props;
 const currentUrl = Astro.url.href;
 const baseUrl = Astro.site;
-const ogImage = `${baseUrl}andrecollin.jpg`;
+const andrecollinimage = baseUrl+'andrecollin.jpg';
+const ogImage = (isblog=="true") ? baseUrl+ imagepath: andrecollinimage;
 const published =  pubdate? new Date(pubdate).toISOString().substring(0, 10):"";
-const jsonLdData = (isblog=="true")?{  
+const jsonLdData = (isblog=="true" && imagepath)?{  
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": pageTitle,
     "description": description,
+    "image": {
+        "url": ogImage
+    },
     "author": {
-    "@type": "Person",
-    "name": "Andre Collin",
-    "url": baseUrl
+        "@type": "Person",
+        "name": "Andre Collin",
+        "image": {
+            "url": andrecollinimage
+        },
+        "url": baseUrl
     },
     "datePublished": published,
 } : {
@@ -56,7 +63,7 @@ const jsonLdData = (isblog=="true")?{
     <meta property="og:type" content="website">
     <meta property="og:title" content={pageTitle}>
     <meta property="og:description" content={description}>
-    <meta property="og:image" content={ogImage}>
+    <meta property="og:image" content={(isblog=="true")?ogImage:andrecollinimage}>
     <meta property="og:url" content={currentUrl}>
     <meta property="og:site_name" content="Andre Collin Portfolio & Blog">
     <script type="application/ld+json" set:html={JSON.stringify(jsonLdData)} />
