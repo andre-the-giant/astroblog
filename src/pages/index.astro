@@ -29,7 +29,8 @@ allPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter
   <h2>My Blog</h2>
   <p>I wrote a few articles about my 5 core values as engineering manager, and about a few topics related to leading a team of software engineers. You're welcome to <a href="/blog">take a look at my blog</a> and let me know what you think!</p>
   <h2>Latest post</h3>
-  <BlogPostCard postdata={allPosts[0]} postcardstyle="home" />
+  <ul><BlogPostCard postdata={allPosts[0]} postcardstyle="home" /></ul>
+
   
 
 </BaseLayout>

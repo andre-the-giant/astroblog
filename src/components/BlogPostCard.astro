@@ -62,7 +62,7 @@ const formattedDate = new Date(postdata.frontmatter.pubDate).toLocaleDateString(
     }
 </style>
 <li class="post-card">
-<a href={postdata.url} class="post-card_img" >
+<a href={postdata.url} class="post-card_img" aria-hidden="true">
     <Picture src={imagePath} alt={postdata.frontmatter.image.alt}} />
 </a>
 {postcardstyle === "blog" ? (
