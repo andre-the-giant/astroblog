@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 import '../styles/global.css';
 const {pageTitle,description,isblog, pubdate, imagepath}=Astro.props;
 const currentUrl = Astro.url.href;
@@ -72,7 +73,8 @@ const jsonLdData = (isblog=="true" && imagepath)?{
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Pirata+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <Navigation></Navigation>
+    <Header />
+    <Navigation />
     <slot />
 </body>
 </html>
