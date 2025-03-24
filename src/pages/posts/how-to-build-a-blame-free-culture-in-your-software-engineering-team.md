@@ -14,7 +14,7 @@ tags: ["psychological-safety", "trust", "postmortem", "incident-response", "team
         margin-left:1rem;
         margin-bottom:2rem;
         counter-reset: aside-counter;
-        border:1px dotted rgb(63, 106, 76);
+        border:1px dotted var(--color-accent);
         font-size:.8rem;
     }
     .aside_title{ margin :0 0 1rem 0}
@@ -36,8 +36,8 @@ tags: ["psychological-safety", "trust", "postmortem", "incident-response", "team
   left: 0;
   top: 0;
   font-size: 2rem; 
-  color:rgb(63, 106, 76);
-  font-family:"Pirata One", system-ui;
+  color:var(--color-accent);
+  font-family: var(--font-heading);
 }
 .aside_list_title{
   font-weight:700;

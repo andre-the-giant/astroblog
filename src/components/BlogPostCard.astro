@@ -25,7 +25,7 @@ const formattedDate = new Date(postdata.frontmatter.pubDate).toLocaleDateString(
         margin:0;
     }
     .post-title a{
-        color:rgb(63, 106, 76);
+        color:var(--color-accent);
         text-decoration: none;
         display: block;
     }
@@ -41,8 +41,8 @@ const formattedDate = new Date(postdata.frontmatter.pubDate).toLocaleDateString(
     .tag{
         display: inline-block;
         font-size: .7rem;
-        background-color: rgb(225, 238, 229);
-        color:rgb(63, 106, 76);;
+        background-color: var(--color-accent-light);
+        color:var(--color-accent);;
         text-decoration: none;
         text-transform: uppercase;
         margin-right:.2rem; padding:.1rem .6rem

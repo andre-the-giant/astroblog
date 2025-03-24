@@ -37,8 +37,8 @@ const imagePath = resolveImage(frontmatter.image) || defaultImage;
     .tag{
         display: inline-block;
         font-size: .7rem;
-        background-color: rgb(225, 238, 229);
-        color:rgb(63, 106, 76);;
+        background-color: var(--color-accent-light);
+        color:var(--color-accent);
         text-decoration: none;
         text-transform: uppercase;
         margin-right:.2rem; 
@@ -52,7 +52,7 @@ const imagePath = resolveImage(frontmatter.image) || defaultImage;
 
         h1{ margin: -10rem -3rem -7rem;
             padding:2rem 3rem ; 
-            background-color:#eeeeeee9; 
+            background-color:var(--color-background-transparent); 
             display: inline-block; }
         .publicationdate{
             margin:3rem 0 1rem 0;
@@ -68,7 +68,7 @@ const imagePath = resolveImage(frontmatter.image) || defaultImage;
 </style>
 <BaseLayout pageTitle={frontmatter.title} description={frontmatter.description} isblog="true" pubdate={frontmatter.pubDate} imagepath={imagePath.src}>
    <article>
-    <Picture src={imagePath} alt={frontmatter.image.alt}}  pictureAttributes={{ style: "background-color: #CCCCCC "}} class="blogImage" />
+    <Picture src={imagePath} alt={frontmatter.image.alt}} class="blogImage" />
     <h1>{frontmatter.title}</h1>
     <div class="publicationdate">Publication date: {formattedDate}</div>
     <slot />
