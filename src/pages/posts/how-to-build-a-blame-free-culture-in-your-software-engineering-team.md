@@ -12,8 +12,9 @@ tags: ["psychological-safety", "trust", "postmortem", "incident-response", "team
     aside{
         padding: 1rem;
         margin-left:1rem;
+        margin-bottom:2rem;
         counter-reset: aside-counter;
-        border:1px solid rgb(63, 106, 76);
+        border:1px dotted rgb(63, 106, 76);
         font-size:.8rem;
     }
     .aside_title{ margin :0 0 1rem 0}
@@ -46,6 +47,12 @@ tags: ["psychological-safety", "trust", "postmortem", "incident-response", "team
     aside{
         float:right;
         width:33%;
+        }
+}
+@media only screen and (min-width: 1000px) {
+    aside{
+        margin-right:-20%;
+        width:40%
         }
 }
 </style>
