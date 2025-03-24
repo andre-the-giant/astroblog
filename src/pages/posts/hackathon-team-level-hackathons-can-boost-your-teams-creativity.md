@@ -6,7 +6,7 @@ description: 'Smaller, team-level hackathons can be a powerful way to drive inno
 image:
     url: 'hackathon.jpg'
     alt: 'Hack it!'
-tags: ["hackathon", "team-culture", "creativity", "innovation", "developer-experience", "experimentation", "engineering-leadership", "collaboration",  "problem-solving", "process-improvement", "ownership", "productivity", "technical-debt"]
+tags: ["hackathon", "experimentation", "creativity", "team-culture", "innovation", "collaboration", "developer-experience", "ownership", "process-improvement", "autonomy", "engagement", "technical-debt"]
 ---
 Hackathons are often seen as large, company-wide events where engineers, designers, and product managers come together to build creative projects in a short period. While these can be exciting, they do not always lead to meaningful improvements for individual teams. Large-scale hackathons sometimes suffer from a lack of follow-up, with great ideas never making it past demo day.
 

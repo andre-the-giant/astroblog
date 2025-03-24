@@ -6,7 +6,8 @@ description: 'Burnout is a major risk in the tech industry, yet it often goes un
 image:
     url: 'blogimage13.jpg'
     alt: ''
-tags: ["burnout", "work-life-balance", "psychological-safety", "team-culture", "stress", "health", "productivity", "process", "workload", "leadership", "support", "mental-health", "sustainability", "accountability", "wellbeing"]
+tags: ["burnout", "wellbeing", "psychological-safety", "mental-health", "stress", "workload", "support", "team-health", "culture", "leadership", "feedback", "preventative-practice"]
+
 ---
 
 Burnout is one of the biggest risks in the tech industry. For instance, a 2023 survey by JetBrains found that 73% of developers have experienced burnout at some point in their careers. Additionally, a 2021 study by Haystack Analytics reported that 83% of software developers felt burnout from work. 

@@ -6,7 +6,8 @@ description: 'Balancing innovation and productivity is a challenge for software 
 image:
     url: ''
     alt: ''
-tags: ["innovation", "creativity", "experimentation", "hackathons", "continuous-improvement", "process", "problem-solving", "growth", "productivity", "learning", "ownership", "leadership", "collaboration", "automation", "agility"]
+tags: ["innovation", "experimentation", "balance", "productivity", "creativity", "design-sprint", "hackathon", "continuous-improvement", "ownership", "focus", "team-culture", "engineering-rhythm"]
+
 ---
 
 Innovation is essential for any software team that wants to stay ahead, but it often takes a backseat to day-to-day tasks. Between sprint deadlines, bug fixes, and stakeholder requests, finding time for new ideas can feel impossible. Yet, the most successful teams are not just the ones that ship features efficiently but the ones that continuously improve, experiment, and explore.

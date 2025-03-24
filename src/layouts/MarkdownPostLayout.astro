@@ -23,6 +23,10 @@ const imagePath = resolveImage(frontmatter.image) || defaultImage;
         object-fit: cover;
         margin-top: 2rem;
     }
+    .publicationdate{
+        margin:1rem 0;
+        font-size: .8rem;
+    }
     @media only screen and (min-width: 634px) {
         .blogImage{
             width:75%;
@@ -37,6 +41,6 @@ const imagePath = resolveImage(frontmatter.image) || defaultImage;
 <BaseLayout pageTitle={frontmatter.title} description={frontmatter.description} isblog="true" pubdate={frontmatter.pubDate} imagepath={imagePath.src}>
     <Picture src={imagePath} alt={frontmatter.image.alt}}  pictureAttributes={{ style: "background-color: #CCCCCC "}} class="blogImage" />
     <h1>{frontmatter.title}</h1>
-    <p>Publication date: {formattedDate}</p>
+    <div class="publicationdate">Publication date: {formattedDate}</div>
     <slot />
 </BaseLayout>

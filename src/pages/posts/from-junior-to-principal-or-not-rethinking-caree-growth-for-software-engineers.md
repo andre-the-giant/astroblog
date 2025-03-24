@@ -6,7 +6,8 @@ description: 'Career growth in software engineering is not a one-size-fits-all j
 image:
     url: 'blogimage3.jpg'
     alt: ''
-tags: ["career-growth", "mentorship", "leadership", "growth", "ownership", "promotion", "skills", "learning", "career-paths", "development", "team-culture", "feedback", "motivation", "coaching", "self-improvement"]
+tags: ["career-growth", "mentorship", "promotion", "growth", "learning", "skills", "career-paths", "ownership", "motivation", "feedback", "coaching", "technical-leadership"]
+
 ---
 
 Career growth in software engineering is often misunderstood. Too many companies still treat it as a ladder that only moves in one direction: junior → mid → senior → manager. But real career growth is not just about climbing higher. It is about developing expertise, gaining new skills, and finding the right balance between ambition and personal fulfillment.

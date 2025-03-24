@@ -6,7 +6,8 @@ description: 'Accountability in development teams is not about blame but about o
 image:
     url: 'blogimage7.jpg'
     alt: ''
-tags: ["accountability", "agile", "ownership", "teamwork", "collaboration", "quality", "trust", "self-organization", "transparency", "communication", "commitment", "technical-debt", "delivery", "risk-management", "team-culture"]
+tags: ["accountability", "ownership", "trust", "commitment", "delivery", "quality", "transparency", "agile", "self-organization", "team-culture", "risk-management", "collaboration","my-5-core-values"]
+
 ---
 
 

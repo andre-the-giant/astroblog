@@ -6,7 +6,8 @@ description: 'Striking the balance between technical guidance and team autonomy 
 image:
     url: 'architecture.jpg'
     alt: ''
-tags: ["software-architecture", "decision-making", "scalability", "technical-leadership", "system-design", "microservices", "monolith", "best-practices", "team-autonomy", "technical-debt", "cross-functional-teams", "leadership", "raci-matrix"]
+tags: ["architecture", "decision-making", "team-autonomy", "system-design", "leadership", "scalability", "mentorship", "technical-alignment", "ownership", "guidance", "cross-functional", "raci"]
+
 ---
 Architecture decisions are one of the most important choices made in a development team. They influence how systems scale, how they are maintained, and how easily new features can be introduced. For example, deciding whether to build a monolithic or microservices-based system impacts how different components interact and scale over time: a monolithic system is usually easier to develop, test, and deploy, but as the system grows, dependencies between components can potentially create bottlenecks. A microservices architecture allows teams to develop, deploy, and scale each service independently, though it introduces challenges such as data consistency and network latency.  
 Each decision requires balancing trade-offs, and while engineering managers can play a crucial role in ensuring good choices, they should avoid dictating solutions. Instead, they need to create an environment where engineers make architectural decisions while aligning with the broader system and business goals. Striking this balance between **guidance and autonomy** is essential to building a successful engineering culture.

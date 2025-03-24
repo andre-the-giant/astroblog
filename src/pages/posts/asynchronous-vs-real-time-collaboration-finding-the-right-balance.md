@@ -6,7 +6,8 @@ description: 'Striking the right balance between async and real-time collaborati
 image:
     url: 'asynchronous.jpg'
     alt: ''
-tags: ["collaboration", "engineering", "async", "real-time", "teamwork", "productivity", "deep-work", "meetings", "alignment", "team-culture", "remote"]
+tags: ["collaboration", "async", "real-time", "deep-work", "focus", "remote", "alignment", "communication", "team-rhythm", "meetings", "team-culture", "autonomy"]
+
 ---
 
 Collaboration is what makes engineering teams function effectively, but not all collaboration needs to happen in real time. Some conversations benefit from async communication, allowing people to contribute at their own pace without disrupting deep work. Other discussions require immediate back-and-forth to get things done efficiently. Striking the right balance between asynchronous and real-time work is what separates teams that work smart from those that get stuck in endless meetings and distractions.

@@ -6,7 +6,8 @@ description: 'Great software isn’t built in silos. True collaboration between 
 image:
     url: 'blogimage10.jpg'
     alt: 'Nothing better than a graffiti to carry an important message'
-tags: ["collaboration", "teamwork", "communication", "cross-functional", "alignment", "transparency", "ownership", "decision-making", "process-improvement", "trust", "productivity", "problem-solving", "team-culture", "leadership", "conflict-resolution"]
+tags: ["collaboration", "cross-functional", "teamwork", "alignment", "communication", "decision-making", "transparency", "team-culture", "agile", "product-delivery", "process", "leadership","my-5-core-values"]
+
 ---
 
 **Great software doesn’t happen in silos.** Developers, designers, product managers, and content teams have to work together, not just to get things done, but to create something that actually makes sense for users. **The best teams don’t just pass work back and forth; they communicate early, align on goals, and solve problems as a unit.** Without that, you get frustration, wasted effort, and a product that feels stitched together instead of seamless.

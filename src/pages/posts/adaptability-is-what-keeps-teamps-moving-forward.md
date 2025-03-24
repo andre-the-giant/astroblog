@@ -6,7 +6,8 @@ description: 'Adaptability is essential for software engineering teams. A rigid 
 image:
     url: 'blogimage8.jpg'
     alt: ''
-tags: ["adaptability", "learning", "problem-solving", "agility", "growth", "resilience", "change", "experimentation", "ownership", "flexibility", "risk-management", "continuous-improvement", "teamwork", "failure", "leadership"]
+tags: ["adaptability", "learning", "change", "resilience", "flexibility", "agility", "growth", "experimentation", "teamwork", "problem-solving", "continuous-improvement", "leadership","my-5-core-values"]
+
 ---
 
 Software development never stands still. New technologies emerge, priorities shift, and unexpected problems always find a way to surface. A team that cannot adapt gets stuck, wasting time on rigid processes or clinging to outdated assumptions. On the other hand, a team that embraces adaptability can handle challenges without losing momentum.

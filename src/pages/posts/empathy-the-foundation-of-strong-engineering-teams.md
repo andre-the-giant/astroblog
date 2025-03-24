@@ -6,7 +6,8 @@ description: 'Empathy is a key driver of collaboration and innovation in enginee
 image:
     url: 'blogimage16.jpg'
     alt: ''
-tags: ["empathy", "collaboration", "communication", "psychological-safety", "emotional-intelligence", "trust", "leadership", "feedback", "team-culture", "conflict-resolution", "relationships", "support", "motivation", "retention", "teamwork"]
+tags: ["empathy", "team-culture", "psychological-safety", "emotional-intelligence", "relationships", "support", "collaboration", "feedback", "communication", "retention", "motivation", "leadership","my-5-core-values"]
+
 ---
 
 Empathy is the ability to **understand and share the feelings of others.** In the context of engineering teams, it means recognizing the challenges, frustrations, and motivations of teammates, stakeholders, and users. It’s about **listening actively, considering different perspectives, and fostering an environment where people feel heard and valued.**

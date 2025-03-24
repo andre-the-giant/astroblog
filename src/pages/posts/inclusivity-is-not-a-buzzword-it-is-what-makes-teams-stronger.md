@@ -6,7 +6,8 @@ description: 'A strong development team isn’t just about technical skills, it�
 image:
     url: 'blogimage5.jpg'
     alt: ''
-tags: ["inclusivity", "diversity", "psychological-safety", "equity", "fairness", "leadership", "team-culture", "communication", "mentorship", "bias", "hiring", "teamwork", "collaboration", "growth", "culture"]
+tags: ["inclusivity", "diversity", "equity", "psychological-safety", "team-culture", "communication", "bias", "hiring", "mentorship", "fairness", "leadership", "belonging","my-5-core-values"]
+
 ---
 
 A great development team isn’t just about technical skills. It’s about the people. When a team is truly inclusive, everyone has the same opportunity to contribute, grow, and feel valued. That means more than just hiring a diverse group of people. It means making sure they are treated fairly, supported, and respected, whether they are a junior developer, a senior engineer, or someone sitting in the C-suite.
