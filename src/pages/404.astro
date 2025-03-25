@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle="Have you lost something?";
+const description = "404- Page not found";
+import { Picture } from 'astro:assets';
+import defaultImage from '../assets/images/404.jpg';
+---
+<BaseLayout pageTitle={pageTitle} description={description} isblog="false">
+  <h1>{pageTitle}</h1>
+  <Picture src={defaultImage} alt="You are alone in the desert and nobody will help you find your keys. Sorry"></Picture>
+  <p>This is a 404 page, that means that the page you're looking for does not exist. </p>
+  <p>Maybe you didn't write the web address correctly?</p>
+  <style>
+    img{max-width:100%; height:auto; 
+  </style>
+</BaseLayout>
