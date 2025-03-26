@@ -8,62 +8,34 @@ image:
     alt: '&copy; bombingscience.com (I think)'
 tags: ["psychological-safety", "trust", "postmortem", "incident-response", "team-culture", "communication", "accountability", "failure", "ownership", "leadership", "transparency", "conflict-avoidance"]
 ---
-<style>
-    aside{
-        padding: 1rem;
-        margin-left:1rem;
-        margin-bottom:2rem;
-        counter-reset: aside-counter;
-        border:1px dotted var(--color-accent);
-        font-size:.8rem;
-    }
-    .aside_title{ margin :0 0 1rem 0}
-
-.aside_list {
-  counter-increment: aside-counter;
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.aside_list:last-child {
-  margin-bottom: 0;
-}
-
-.aside_list::before {
-  content: counter(aside-counter);
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 2rem; 
-  color:var(--color-accent);
-  font-family: var(--font-heading);
-}
-.aside_list_title{
-  font-weight:700;
-  font-size:1rem;
-}
-@media only screen and (min-width: 634px) {
-    aside{
-        float:right;
-        width:33%;
-        }
-}
-@media only screen and (min-width: 1000px) {
-    aside{
-        margin-right:-20%;
-        width:40%
-        }
-}
-</style>
 <aside>
-<h3 class="aside_title">6 red flags your team isn’t blame-free</h3>
-<div class="aside_list"><div class="aside_list_title">"Who did this?"</div>First reaction to failure is finger-pointing, not investigation.</div>
-<div class="aside_list"><div class="aside_list_title">Postmortems name names</div>The focus is on people, not process or system flaws.</div>
-<div class="aside_list"><div class="aside_list_title">Retros are too quiet</div>Silence isn’t agreement, it’s fear.</div>
-<div class="aside_list"><div class="aside_list_title">Ownership is avoided</div>No one wants to touch risky areas of the code.</div>
-<div class="aside_list"><div class="aside_list_title">Leaders never own up</div>Mistakes flow downhill. Management stays spotless.</div>
-<div class="aside_list"><div class="aside_list_title">Mistakes get punished</div>Honest errors turn into blame, not lessons.</div>
+<h3>6 red flags your team isn’t blame-free</h3>
+<ol>
+  <li>
+  <h4>"Who did this?"</h4>
+  <p>First reaction to failure is finger-pointing, not investigation.</p>
+  </li>
+  <li>
+  <h4>Postmortems name names</h4>
+  <p>The focus is on people, not process or system flaws.</p>
+  </li>
+  <li>
+  <h4>Retros are too quiet</h4>
+  <p>Silence isn’t agreement, it’s fear.</p>
+  </li>
+  <li>
+  <h4>Ownership is avoided</h4>
+  <p>No one wants to touch risky areas of the code.</p>
+  </li>
+  <li>
+  <h4>Leaders never own up</h4>
+  <p>Mistakes flow downhill. Management stays spotless.</p>
+  </li>
+  <li>
+  <h4>Mistakes get punished</h4>
+  <p>Honest errors turn into blame, not lessons.</p>
+  </li>
+</ol>
 </aside>
 Every team I've been part of had made mistakes: Production goes down, bugs slip through, features get shipped with edge cases no one caught. And the list goes on! That’s just the reality of software engineering. But what matters the most isn’t whether things go wrong, it’s how the team reacts when they do and how learn from it so it does not happen again.
 
