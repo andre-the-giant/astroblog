@@ -84,7 +84,7 @@ Finally, check in with your team in 1:1s. Incidents are stressful. Not everyone 
 
 
 
-**Incidents will happen. That’s part of the job. But how your team responds—and how they feel about that response—depends heavily on what you’ve put in place as their manager.**
+**Incidents will happen. That’s part of the job. But how your team responds, and how they feel about that response, depends heavily on what you’ve put in place as their manager.**
 
 **Before an incident, build a clear, trusted process. During an incident, clear the path and keep the team focused. Afterward, help the team learn and recover.**
 
