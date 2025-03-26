@@ -3,8 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPostCard from '../components/BlogPostCard.astro';
 const pageTitle="Andre Collin - Portfolio / Blog";
 const description = "Andre Collin's portfolio and blog about software engineering, leadership, and agile methodologies.";
-const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-allPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter.pubDate));
+
+import { getCollection } from 'astro:content';
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 ---
 <BaseLayout pageTitle={pageTitle} description={description} isblog="false">
   <h1>{pageTitle}</h1>
@@ -28,7 +30,7 @@ allPosts.sort((a, b) => new Date(b.frontmatter.pubDate) - new Date(a.frontmatter
   <h2>My Blog</h2>
   <p>I wrote a few articles about <a href="/tags/my-5-core-values">my 5 core values</a> as engineering manager, and about a few topics related to leading a team of software engineers. You're welcome to <a href="/blog">take a look at my blog</a> and let me know what you think!</p>
   <h2>Latest post</h3>
-  <ul><BlogPostCard postdata={allPosts[0]} postcardstyle="home" /></ul>
+  <ul><BlogPostCard postdata={sortedPosts[0]} postcardstyle="home" /></ul>
 
   
 

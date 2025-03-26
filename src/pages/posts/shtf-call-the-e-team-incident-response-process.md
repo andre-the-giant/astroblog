@@ -6,7 +6,7 @@ description: "Incidents happen. As an engineering manager, my job is to make sur
 image:
     url: "incident.jpg"
     alt: "Call the fire department or fire up the bat signal. Here comes the incident response team!"
-tags: ["incident-response", "postmortem", "communication", "psychological-safety", "leadership", "engineering-manager", "team-support", "bug-triage", "manager-on-call", "cross-functional", "process", "trust"]
+tags: ["incident-response", "postmortem", "communication", "psychological-safety", "leadership", "team-support", "bug-triage", "manager-on-call", "cross-functional", "process", "trust"]
 ---
 ## What to do when incidents happen, and how to be ready before they do
 <aside>

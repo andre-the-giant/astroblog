@@ -1,32 +1,33 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import BlogPostCard from '../components/BlogPostCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPostCard from '../../components/BlogPostCard.astro';
+import Pagination from '../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 
+export async function getStaticPaths() {
+    const pageSize = 5;
+    const allPosts = await getCollection('blog');
+    const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+    const totalPages = Math.ceil(sortedPosts.length / pageSize);
+    return Array.from({ length: totalPages }).map((_, i) => ({
+    params: { page: (i + 1).toString() },
+    }));
+}
+
 const pageSize = 5;
+const { page } = Astro.params;
+const pageNumber = parseInt(page) || 1;
 const allPosts = await getCollection('blog');
 const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
-
-const { page, start, end } = Astro.params;
-const pageNumber = parseInt(page) || 1;
 const paginatedPosts = sortedPosts.slice((pageNumber - 1) * pageSize, pageNumber * pageSize);
-const totalPages = Math.ceil(sortedPosts.length / pageSize);
 
 const pageTitle = "My blog";
 const description = "Andre Collin's blog about software engineering, leadership, and agile methodologies."
-
 ---
 
 <BaseLayout pageTitle={pageTitle} description={description} isblog="true">
 <h1>{pageTitle}</h1>
-
-<nav class="pagination">
-    {pageNumber > 1 && <a href={`/blog/${pageNumber - 1}`}>&laquo; Prev</a>}
-    {Array.from({ length: totalPages }, (_, i) => (
-      <a href={`/blog/${i + 1}`} class={pageNumber === i + 1 ? 'active' : ''}>{i + 1}</a>
-    ))}
-    {pageNumber < totalPages && <a href={`/blog/${pageNumber + 1}`}>Next &raquo;</a>}
-  </nav>
+<Pagination />
 <ul>
     {paginatedPosts.map((post) => {
         return(
@@ -34,4 +35,5 @@ const description = "Andre Collin's blog about software engineering, leadership,
     );
       })}
 </ul>
+<Pagination />
 </BaseLayout>

@@ -5,8 +5,8 @@ const { postdata, postcardstyle } = Astro.props;
 const imageMap = import.meta.glob('../assets/images/*', { eager: true });
 const resolveImage = (image) => {
   return image && imageMap[`../assets/images/${image.url}`] ? imageMap[`../assets/images/${image.url}`].default : null;};
-const imagePath = resolveImage(postdata.frontmatter.image) || defaultImage;
-const formattedDate = new Date(postdata.frontmatter.pubDate).toLocaleDateString("en-US", {
+const imagePath = resolveImage(postdata.data.image) || defaultImage;
+const formattedDate = new Date(postdata.data.pubDate).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -45,7 +45,7 @@ const formattedDate = new Date(postdata.frontmatter.pubDate).toLocaleDateString(
         color:var(--color-accent);;
         text-decoration: none;
         text-transform: uppercase;
-        margin-right:.2rem; padding:.1rem .6rem
+        margin-right:.2rem; padding:.1rem .6rem;
     }
 
     @media only screen and (min-width: 634px) {
@@ -63,22 +63,22 @@ const formattedDate = new Date(postdata.frontmatter.pubDate).toLocaleDateString(
     }
 </style>
 <li class="post-card">
-<a href={postdata.url} class="post-card_img" aria-hidden="true">
-    <Picture src={imagePath} alt={postdata.frontmatter.image.alt}} />
+<a href={`/posts/${postdata.id}`} class="post-card_img" aria-hidden="true">
+    <Picture src={imagePath} alt={postdata.data.image.alt}} />
 </a>
 {postcardstyle === "blog" ? (
-   <h2 class="post-title"><a href={postdata.url}>{postdata.frontmatter.title}</a></h2>
+   <h2 class="post-title"><a href={`/posts/${postdata.id}`}>{postdata.data.title}</a></h2>
   ) : (
-  <h3 class="post-title"><a href={postdata.url}>{postdata.frontmatter.title}</a></h3>
+  <h3 class="post-title"><a href={`/posts/${postdata.id}`}>{postdata.data.title}</a></h3>
   )}
   
 
 <div class="post-date">{formattedDate}</div>
-<div class="blogContent">{postdata.frontmatter.description}</div>
+<div class="blogContent">{postdata.data.description}</div>
 {postcardstyle === "blog" && (
 
     <div class="tags">
-    {postdata.frontmatter.tags.map((tag) => {
+    {postdata.data.tags.map((tag) => {
         // Convert tag to display format: "Proactive Teams"
         const formattedTag = tag
         .split('-')  // Split at dashes

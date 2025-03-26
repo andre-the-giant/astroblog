@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+
+const pageSize = 5;
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const { page } = Astro.params;
+const pageNumber = parseInt(page) || 1;
+const totalPages = Math.ceil(sortedPosts.length / pageSize);
+---
+<style>
+    .pagination{
+        margin:2rem 0; padding:0;
+    }
+    .pagination a{
+        background-color:var(--color-accent-light);
+        color:var(--color-accent);
+        text-decoration: none;
+        display:inline-block;
+        padding: 0 .5rem;
+        margin-right:.2rem;
+    }
+    .pagination a.active{
+        background-color: var(--color-accent);
+        color:var(--color-accent-light);
+        
+    }
+    .pagination .total{       
+        color:var(--color-accent);
+        font-size: .8rem;
+    }
+</style>
+<nav class="pagination">
+    {pageNumber > 1 && <a href={`/blog/${pageNumber - 1}`}>&laquo; Prev</a>}
+    {Array.from({ length: totalPages }, (_, i) => (
+      <a href={`/blog/${i + 1}`} class={pageNumber === i + 1 ? 'active' : ''}>{pageNumber === i + 1 ? 'Page ' : ''} {i + 1}</a>
+    ))}
+    {pageNumber < totalPages && <a href={`/blog/${pageNumber + 1}`}>Next &raquo;</a>}
+    <span class="total"> {allPosts.length} articles </span>
+</nav>
