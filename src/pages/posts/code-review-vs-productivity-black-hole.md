@@ -8,9 +8,6 @@ image:
   alt: ""
 tags: ["code-review", "delivery", "productivity", "team-culture", "pull-request", "collaboration", "feedback", "context-switching", "trust", "ownership", "software-quality", "process"]
 ---
-
-## Good code review vs productivity black hole
-
 ## What’s a pull request and why code review exists
 
 For anyone unfamiliar with the process, a pull request (PR) happens when a developer finishes a piece of code and asks to merge it into the main codebase. Before it gets merged, another engineer on the team reviews the changes: it's the Code Review (CR) This process is not just about catching bugs, CR is how teams share knowledge and ensure code consistency. It's a highly needed process to prevent long-term messes in the codebase.
