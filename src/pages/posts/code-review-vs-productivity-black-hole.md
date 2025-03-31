@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Good code review vs productivity black hole"
-pubDate: 2025-0-31
+pubDate: 2025-03-31
 description: "Code reviews are meant to protect quality, not kill delivery. Here's how broken habits quietly drain momentum—and what engineering managers can do to make code review a strength, not a blocker."
 image:
   url: "codereview.jpg"
