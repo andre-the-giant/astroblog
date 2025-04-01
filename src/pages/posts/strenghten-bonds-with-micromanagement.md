@@ -42,11 +42,11 @@ And most importantly, push pressure down. If you’re getting heat from above, m
 Kudos if you can do all this by adding a last-minute-meeting with no context so you can ask the developers the percentage of completion of their task.
 
 
-## Closing thought
 
-Micromanagement isn’t anxiety in spreadsheet form. It’s leadership in its purest, most granular state. It's one of the oldest (and proved!) method of modern management. 
 
-So the next time someone tells you to "trust your team", ask yourself: Why would I take that risk when I can just manage harder?
+**Micromanagement isn’t anxiety in spreadsheet form. It’s leadership in its purest, most granular state. It's one of the oldest (and proved!) method of modern management. **
+
+**So the next time someone tells you to "trust your team", ask yourself: Why would I take that risk when I can just manage harder?**
 
 
 
