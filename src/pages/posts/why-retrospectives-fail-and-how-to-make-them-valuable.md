@@ -28,7 +28,7 @@ Another reason retros fail is when there is no psychological safety. If people f
 
 Retros also fail when they turn into endless complaints without action. A good retrospective does not just list problems. It finds solutions. If issues are raised but not addressed, the team will feel like the retro is pointless.
 
-Sometimes retrospectives fail because they are dominated by a few voices. If the same people are always speaking while others stay quiet, the discussion does not reflect the whole team’s experience. This is often a facilitation issue, where the format does not encourage balanced participation.
+Sometimes retrospectives fail because they are dominated by a few voices. If the same people are always speaking while others stay quiet, the discussion does not reflect the whole team's experience. This is often a facilitation issue, where the format does not encourage balanced participation.
 
 ## What makes a retrospective valuable
 
@@ -58,6 +58,6 @@ It is also crucial to make feedback go both ways. Engineering managers should no
 
 A retrospective is not about venting, and it is not about checking a box for agile processes. It is about identifying ways to improve and making sure those improvements happen. Teams that do not take retrospectives seriously end up stuck in the same cycles of inefficiency and frustration. Teams that treat them as an opportunity to learn and grow continuously refine how they work.
 
-**Engineering managers play a crucial role in making retros effective. By ensuring psychological safety, keeping discussions fresh, following up on action items, and fostering open communication, they can turn retrospectives into one of the most valuable meetings in the team’s workflow.**
+**Engineering managers play a crucial role in making retros effective. By ensuring psychological safety, keeping discussions fresh, following up on action items, and fostering open communication, they can turn retrospectives into one of the most valuable meetings in the team's workflow.**
 
 **If your retros are feeling repetitive, unproductive, or just like another meeting, it might be time to rethink how they are run. The difference between a good team and a great team is often found in how well they learn and adapt. Retrospectives are one of the best ways to make that happen.**

@@ -50,7 +50,7 @@ Regular one-on-one meetings are another key moment for feedback. Instead of wait
 
 Feedback also needs to go in both directions. As a leader, you cannot just give feedback, you need to actively ask for it from your engineers. Simple questions like *"Is there anything I could be doing better to support you?"* or *"What is something I am not seeing that is affecting the team?"* help uncover blind spots. I have found that the more I show I am open to feedback, the more my team is willing to share honest thoughts about what is and is not working.
 
-Encouraging peer feedback also strengthens teams. If feedback only comes from leadership, engineers may hesitate to share their thoughts with each other. Creating spaces for engineers to review each other’s work, discuss approaches openly, and improve together ensures that feedback is embedded in the team's DNA.
+Encouraging peer feedback also strengthens teams. If feedback only comes from leadership, engineers may hesitate to share their thoughts with each other. Creating spaces for engineers to review each other's work, discuss approaches openly, and improve together ensures that feedback is embedded in the team's DNA.
 
 ## Feedback is a skill, not a one-time conversation
 

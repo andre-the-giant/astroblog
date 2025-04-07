@@ -10,7 +10,7 @@ tags: ["hackathon", "experimentation", "creativity", "team-culture", "innovation
 ---
 Hackathons are often seen as large, company-wide events where engineers, designers, and product managers come together to build creative projects in a short period. While these can be exciting, they do not always lead to meaningful improvements for individual teams. Large-scale hackathons sometimes suffer from a lack of follow-up, with great ideas never making it past demo day.
 
-But **hackathons do not need to be massive**. Engineering managers can run team-level hackathons that focus on solving real problems, experimenting with new technologies, and improving developer workflows. These smaller, more focused hackathons often have a bigger impact because they are aligned with the team’s actual work and lead to actionable results.
+But **hackathons do not need to be massive**. Engineering managers can run team-level hackathons that focus on solving real problems, experimenting with new technologies, and improving developer workflows. These smaller, more focused hackathons often have a bigger impact because they are aligned with the team's actual work and lead to actionable results.
 
 ## Getting buy-in from leadership and cross-functional partners
 

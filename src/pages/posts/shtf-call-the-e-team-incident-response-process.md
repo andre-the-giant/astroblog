@@ -43,9 +43,9 @@ Being effective during an incident necessitate cold blood, but also preparation 
 
 ## Before anything breaks
 
-If you wait for an incident to define how your team handles incidents, it will already be too late. One of the most important things an engineering manager can do is make sure the team is prepared before there’s anything to respond to.
+If you wait for an incident to define how your team handles incidents, it will already be too late. One of the most important things an engineering manager can do is make sure the team is prepared before there's anything to respond to.
 
-This starts with the basics: is there a clear incident response process in your department? There surely do, but does the team know who’s on call, how to escalate, and what tools they’ll be using? Are incident channels and alerting well defined?
+This starts with the basics: is there a clear incident response process in your department? There surely do, but does the team know who's on call, how to escalate, and what tools they'll be using? Are incident channels and alerting well defined?
 
 Also, think about your bug triage process. This is often the moment when teams hesitate if this a bug, or if this an incident. You need **clear criteria** that help engineers make the call quickly and confidently. **If escalation feels ambiguous, it will slow down response time** or cause things to stay quiet when they shouldn't.
 
@@ -57,11 +57,11 @@ And finally, prep your cross-functional partners. When something breaks, the who
 
 ## When everything breaks
 
-During a real incident, your job as an engineering manager is not to take over. It’s to **support the people doing the work** and make sure nothing distracts them from solving the problem.
+During a real incident, your job as an engineering manager is not to take over. It's to **support the people doing the work** and make sure nothing distracts them from solving the problem.
 
 **Engineers need focus**. That means you need to handle everything else. You should be coordinating with product, giving leadership regular updates, and managing any external communication channels. This allows the people troubleshooting to stay deep in the problem without fielding status requests every five minutes.
 
-It helps to define a **manager-on-call** role during high-severity incidents. This person might not be on the front line and doesn't need to be a Subject Matter Expert, but they’re available to monitor communication, step in when something gets blocked, and make sure the team has what it needs. They might not always be needed, but when the pressure increases, having that presence **helps everyone stay aligned and supported**.
+It helps to define a **manager-on-call** role during high-severity incidents. This person might not be on the front line and doesn't need to be a Subject Matter Expert, but they're available to monitor communication, step in when something gets blocked, and make sure the team has what it needs. They might not always be needed, but when the pressure increases, having that presence **helps everyone stay aligned and supported**.
 
 While the incident unfolds, **keep tracks** of what decisions are being made and when. Note the gaps and areas of confusion. This will help shape the postmortem later.
 
@@ -69,22 +69,22 @@ Most importantly, **stay calm**. Engineering managers set the tone. If you're pa
 
 ## After things are stable
 
-Once the incident is resolved, the real work begins. Your role doesn’t stop with recovery. It extends into learning and follow-through.
+Once the incident is resolved, the real work begins. Your role doesn't stop with recovery. It extends into learning and follow-through.
 
-**Postmortems are essential**, they are a core part of the incident lifecycle. A good postmortem helps the team understand what failed, why it failed, and what needs to change to prevent similar incidents. It’s not about pointing fingers, it's about finding blind spots, fixing processes, and capturing lessons while they’re still fresh.
+**Postmortems are essential**, they are a core part of the incident lifecycle. A good postmortem helps the team understand what failed, why it failed, and what needs to change to prevent similar incidents. It's not about pointing fingers, it's about finding blind spots, fixing processes, and capturing lessons while they're still fresh.
 
 As the manager, it's also your job to publicly **acknowledge what went wrong**. If customers were impacted or a mistake was made, own that. Transparency builds trust.
 
 And don't forget to **recognize the people who showed up** and helped resolve the issue. Whether it was someone leading the response, pulling logs, calming the team, or pushing the fix, their effort should be visible and appreciated.
 
-**Action items** should be realistic, assigned, and tracked. A postmortem without follow-up loses its value. Make sure the next sprint includes space for the highest-priority fixes, whether they’re tooling improvements, playbook changes, or architectural updates.
+**Action items** should be realistic, assigned, and tracked. A postmortem without follow-up loses its value. Make sure the next sprint includes space for the highest-priority fixes, whether they're tooling improvements, playbook changes, or architectural updates.
 
-Finally, check in with your team in 1:1s. Incidents are stressful. Not everyone will voice concerns publicly. Some might be proud, some might be frustrated, and some might just be tired. Give them the space to process and talk about what worked and what didn’t.
-
-
+Finally, check in with your team in 1:1s. Incidents are stressful. Not everyone will voice concerns publicly. Some might be proud, some might be frustrated, and some might just be tired. Give them the space to process and talk about what worked and what didn't.
 
 
-**Incidents will happen. That’s part of the job. But how your team responds, and how they feel about that response, depends heavily on what you’ve put in place as their manager.**
+
+
+**Incidents will happen. That's part of the job. But how your team responds, and how they feel about that response, depends heavily on what you've put in place as their manager.**
 
 **Before an incident, build a clear, trusted process. During an incident, clear the path and keep the team focused. Afterward, help the team learn and recover.**
 

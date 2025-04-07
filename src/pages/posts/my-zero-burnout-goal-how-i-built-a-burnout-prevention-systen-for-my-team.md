@@ -26,7 +26,7 @@ I wanted this to be something we built together, not something I imposed. We agr
 
 The team wellness mission we came up with was simple:
 
-> Well-being is a top priority for all members of our team. Our goal is to create a culture that minimizes symptoms of burnout. We support and empower each other to improve and maintain overall health by making wellness part of our team’s values. 
+> Well-being is a top priority for all members of our team. Our goal is to create a culture that minimizes symptoms of burnout. We support and empower each other to improve and maintain overall health by making wellness part of our team's values. 
 
 From that mission, we set some clear burnout prevention goals:
 

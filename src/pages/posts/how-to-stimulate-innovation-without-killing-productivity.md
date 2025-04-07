@@ -42,7 +42,7 @@ What worked well was the energy it brought to the team. Everyone was excited to 
 
 But not everything went smoothly. The completely open format led to some teams working on projects that were either irrelevant or just an excuse to catch up on unfinished work. While it was great to give people freedom, the lack of structure meant a lot of effort went into things that had no impact. Another issue was that once a year, our company ran a separate hackathon with a different format, and some people on my team were confused about how the two events were different.
 
-If I were to improve it, I would introduce some level of structure. Instead of making it a free-for-all, I would define broad themes or problem spaces to guide projects. That way, engineers would still have creative freedom, but the results would be more relevant to the company’s goals.
+If I were to improve it, I would introduce some level of structure. Instead of making it a free-for-all, I would define broad themes or problem spaces to guide projects. That way, engineers would still have creative freedom, but the results would be more relevant to the company's goals.
 
 For teams looking for a more structured approach, design sprints are another great option. Unlike hackathons, which are open-ended, design sprints follow a five-day process to rapidly prototype and test solutions. Design sprints can sometimes save months of development time by allowing to validate ideas before committing resources. They work best when the team is facing a major unknown, needs to align quickly, or has a complex problem to solve.
 

@@ -44,7 +44,7 @@ Similarly, handling administrative tasks, like answering emails or planning disc
 
 **Clear priorities are essential.** Engineers should not have to guess what is most important. If priorities change constantly, teams will always be in reaction mode instead of making steady progress. A structured backlog, clear sprint goals, and proper planning reduce unnecessary task switching.
 
-**Minimizing unnecessary meetings** is another way to protect deep work. Every meeting interrupts an engineer’s workflow, and it takes time to regain focus afterward. Not all meetings are avoidable, but scheduling them in blocks, keeping them short, and questioning whether they are truly needed can help.
+**Minimizing unnecessary meetings** is another way to protect deep work. Every meeting interrupts an engineer's workflow, and it takes time to regain focus afterward. Not all meetings are avoidable, but scheduling them in blocks, keeping them short, and questioning whether they are truly needed can help.
 
 ## How Kanban teams can struggle with context switching
 

@@ -22,7 +22,7 @@ Growth is not just a personal goal; it affects the entire team. When engineers f
 
 I once worked with a senior backend engineer who was interested in moving into engineering management. Instead of rushing him into a leadership role, we worked on a structured transition. Over six months, I coached him as he moved into an associate engineering manager role, giving him space to learn without overwhelming him. By the time he officially became an EM, he was ready to lead his own team.
 
-But not everyone wants more responsibility. I also knew a senior full-stack engineer who had zero interest in becoming a principal engineer or a manager. He had seen what those roles required and knew the extra responsibility would negatively impact his quality of life. He was happy where he was. That did not mean his growth stopped. He picked up Go, kept on mentoring junior developers, and stayed engaged in the team’s evolution. Growth for him was about depth, not promotion. And that was completely valid.
+But not everyone wants more responsibility. I also knew a senior full-stack engineer who had zero interest in becoming a principal engineer or a manager. He had seen what those roles required and knew the extra responsibility would negatively impact his quality of life. He was happy where he was. That did not mean his growth stopped. He picked up Go, kept on mentoring junior developers, and stayed engaged in the team's evolution. Growth for him was about depth, not promotion. And that was completely valid.
 
 ## What engineering managers can do to support meaningful career growth
 
@@ -38,7 +38,7 @@ Career conversations should not happen once a year at performance reviews. They 
 
 ### Encourage continuous learning and exploration
 
-An engineer’s career should never feel stagnant. Companies that invest in learning, through mentorship programs, technical talks, conference support, or time for side projects, build teams that stay curious and adaptable.
+An engineer's career should never feel stagnant. Companies that invest in learning, through mentorship programs, technical talks, conference support, or time for side projects, build teams that stay curious and adaptable.
 
 Some engineers grow by expanding their technical knowledge into new areas, like a backend developer learning cloud infrastructure or a frontend developer diving into accessibility best practices. Others grow by teaching, becoming go-to mentors for junior engineers. Both forms of growth are equally valuable.
 
@@ -54,6 +54,6 @@ The best engineering teams are not built by forcing people into predefined roles
 
 Some will move into management. Some will push technical boundaries. Some will stay exactly where they are, doing what they love, while still evolving as mentors and experts. 
 
-**Every path is valid, and it is an engineering manager’s job to help unlock those opportunities.**
+**Every path is valid, and it is an engineering manager's job to help unlock those opportunities.**
 
 **At the end of the day, people do their best work when they feel challenged, valued, and supported. Growth is not about titles. It is about becoming better, every step of the way.**

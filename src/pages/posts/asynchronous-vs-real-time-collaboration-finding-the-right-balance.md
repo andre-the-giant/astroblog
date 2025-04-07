@@ -56,7 +56,7 @@ The key is intentionality. Instead of defaulting to one way of working, teams sh
 
 Engineering managers play a critical role in shaping how teams collaborate. They set the expectations for when async is appropriate and when real-time discussions are necessary. One of the most impactful things a manager can do is protect deep work time by limiting unnecessary meetings and interruptions. If engineers are constantly being pulled into discussions, it is up to leadership to push back and create an environment where focused work is respected.
 
-Managers should also model good async habits. Writing clear documentation, leaving structured feedback, and setting response expectations help establish async collaboration as a default, not an afterthought. When decisions require real-time input, managers can ensure that meetings are well-structured, have clear agendas, and respect everyone’s time.
+Managers should also model good async habits. Writing clear documentation, leaving structured feedback, and setting response expectations help establish async collaboration as a default, not an afterthought. When decisions require real-time input, managers can ensure that meetings are well-structured, have clear agendas, and respect everyone's time.
 
 Most importantly, managers need to observe and adjust. If a team is struggling with decision-making because too much is async, they should introduce more live discussions. If engineers are feeling overwhelmed with meetings, they should reassess what truly needs to happen synchronously. Finding the right balance is an ongoing process, and managers should continuously check in with the team to see what is working and what is not.
 

@@ -74,4 +74,4 @@ Another key responsibility is helping the team understand why these factors matt
 
 ## Hiring shapes the future of a team
 
-**Every hire impacts team culture, collaboration, and long-term success. The challenge is not just finding technically strong engineers but ensuring they fit into a balanced and inclusive team. A manager’s role is to see beyond technical skills, challenge biases, and build a team that thrives together.**
+**Every hire impacts team culture, collaboration, and long-term success. The challenge is not just finding technically strong engineers but ensuring they fit into a balanced and inclusive team. A manager's role is to see beyond technical skills, challenge biases, and build a team that thrives together.**

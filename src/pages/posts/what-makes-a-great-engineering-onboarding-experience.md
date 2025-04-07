@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'What makes a great engineering onboarding experience'
 pubDate: 2025-03-12
-description: 'Onboarding can make or break an engineer’s success in a team. A structured and thoughtful approach helps new hires integrate faster, become productive sooner, and feel like part of the team from day one.'
+description: 'Onboarding can make or break an engineer's success in a team. A structured and thoughtful approach helps new hires integrate faster, become productive sooner, and feel like part of the team from day one.'
 image:
     url: 'blogimage14.jpg'
     alt: ''
@@ -10,7 +10,7 @@ tags: ["onboarding", "mentorship", "documentation", "team-culture", "efficiency"
 
 ---
 
-I have seen onboarding make or break an engineer’s success in a team. Some companies do it well, giving new hires the tools, guidance, and space to ramp up confidently. Others drop them into a chaotic environment with little direction, expecting them to "figure it out." The difference between those two approaches is retention, productivity, and overall team morale.
+I have seen onboarding make or break an engineer's success in a team. Some companies do it well, giving new hires the tools, guidance, and space to ramp up confidently. Others drop them into a chaotic environment with little direction, expecting them to "figure it out." The difference between those two approaches is retention, productivity, and overall team morale.
 
 When onboarding is treated as an afterthought, new hires struggle. They hesitate to ask questions, waste time searching for answers, and feel disconnected from the team. When done right, onboarding is not just about setting up accounts and handing over documentation. It is about helping engineers integrate smoothly, understand how things work, and feel like part of the team as soon as possible.
 

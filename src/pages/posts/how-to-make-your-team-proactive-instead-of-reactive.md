@@ -27,7 +27,7 @@ A proactive team does not just focus on the now. They take time to think about t
 Proactive teams identify risks early and resolve them before they escalate into significant issues. They continuously enhance workflows rather than tolerating inefficiencies. They automate repetitive tasks to eliminate time spent on manual labor. Additionally, they improve internal documentation and onboarding processes to minimize friction for new engineers. Furthermore, they challenge conventional practices and question established habits.
 How I encourage my team to be more proactive
 
-Over the years, I have worked on moving teams from a reactive to a proactive mindset. Two experiences stand out because they both had a direct impact on the team’s efficiency and morale.
+Over the years, I have worked on moving teams from a reactive to a proactive mindset. Two experiences stand out because they both had a direct impact on the team's efficiency and morale.
 
 An example : fixing slow CI/CD instead of just complaining about it
 
