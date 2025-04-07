@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Inclusivity isn't a buzzword, it's what makes teams stronger'
+title: Inclusivity isn't a buzzword, it's what makes teams stronger
 pubDate: 2025-02-26
-description: 'A strong development team isn't just about technical skills, it's about inclusivity. When teams are truly inclusive, they foster innovation, improve retention, and create an environment where everyone can thrive.'
+description: A strong development team isn't just about technical skills, it's about inclusivity. When teams are truly inclusive, they foster innovation, improve retention, and create an environment where everyone can thrive.
 image:
     url: 'blogimage5.jpg'
     alt: ''

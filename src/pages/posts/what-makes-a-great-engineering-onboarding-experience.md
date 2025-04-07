@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'What makes a great engineering onboarding experience'
 pubDate: 2025-03-12
-description: 'Onboarding can make or break an engineer's success in a team. A structured and thoughtful approach helps new hires integrate faster, become productive sooner, and feel like part of the team from day one.'
+description: Onboarding can make or break an engineer's success in a team. A structured and thoughtful approach helps new hires integrate faster, become productive sooner, and feel like part of the team from day one.
 image:
     url: 'blogimage14.jpg'
     alt: ''

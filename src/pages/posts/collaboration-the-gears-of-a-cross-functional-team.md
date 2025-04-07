@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Collaboration, the gears of a cross-functional team'
 pubDate: 2025-02-25
-description: 'Great software isn't built in silos. True collaboration between developers, designers, and product managers leads to better products, fewer misunderstandings, and a more effective agile process.'
+description: Great software isn't built in silos. True collaboration between developers, designers, and product managers leads to better products, fewer misunderstandings, and a more effective agile process.
 image:
     url: 'blogimage10.jpg'
     alt: 'Nothing better than a graffiti to carry an important message'
