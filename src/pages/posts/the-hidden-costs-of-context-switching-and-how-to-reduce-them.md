@@ -71,3 +71,7 @@ The best engineering teams are not the ones that juggle the most tasks at once. 
 Reducing context switching does not just make engineers happier. It leads to better code, faster development cycles, and fewer mistakes. Engineering managers need to create an environment where focus is protected, not constantly disrupted.
 
 **If your team is struggling with slow progress, inconsistent quality, or frustrated developers, context switching might be the hidden cause. Fixing it is not just about working harder, it is about working smarter.**
+
+
+## *** Edit ***
+I recently connected with John Poyser, Sr Director at Codezero Technologies in Vancouver. He wrote [a great article about context switching](https://codezero.io/blog/context-switching-costs-for-devs) and he also built [this calculator](https://codezero.io/context-switching-cost-calculator) that can help Engineering Manager to estimate the cost of context switching, thus having great argument to discuss it with non-engineering collaborators and advocate for better engineering practices. 
