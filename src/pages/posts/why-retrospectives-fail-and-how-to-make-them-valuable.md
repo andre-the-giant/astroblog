@@ -6,7 +6,7 @@ description: 'Retrospectives should be one of the most valuable meetings in an a
 image:
     url: 'blogimage2.jpg'
     alt: ''
-tags: ["retrospective", "agile", "feedback", "team-culture", "continuous-improvement", "psychological-safety", "facilitation", "communication", "learning", "trust", "growth", "reflection"]
+tags: ["retrospective", "agile", "feedback", "team-culture", "continuous-improvement", "psychological-safety", "facilitation", "communication", "learning", "trust", "growth", "reflection","conflict"]
 
 ---
 

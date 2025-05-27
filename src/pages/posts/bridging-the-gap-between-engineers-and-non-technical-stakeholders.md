@@ -6,7 +6,7 @@ description: 'One of the biggest challenges in software teams is ensuring that e
 image:
     url: 'blogimage9.jpg'
     alt: ''
-tags: ["stakeholders", "communication", "cross-functional", "alignment", "expectations", "trust", "collaboration", "transparency", "decision-making", "conflict-resolution", "product-delivery", "empathy"]
+tags: ["stakeholders", "communication", "cross-functional", "alignment", "expectations", "trust", "collaboration", "transparency", "decision-making", "conflict-resolution", "product-delivery", "empathy","conflict"]
 
 ---
 
