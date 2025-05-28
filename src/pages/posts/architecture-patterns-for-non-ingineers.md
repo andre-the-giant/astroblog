@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "Architecture patterns for non-engineers"
+title: "Software architecture patterns for non-engineers"
 pubDate: 2025-05-28
 description: "A non-technical guide to common software architecture styles: monoliths, microservices, serverless and more—and why these choices matter for teams and products."
 image:
@@ -8,9 +8,6 @@ image:
   alt: ""
 tags: ["architecture", "monolith", "microservices", "modular-monolith", "frontend-backend", "serverless", "jamstack", "decision-making"]
 ---
-
-## Why software architecture matters
-
 Every time a team makes a decision about how to organize its code, it affects more than just technology. It shapes how quickly people can deliver new features, how easy it is to train new team members, and even how confident the team feels. 
 
 For non-engineers, understanding these high-level choices can help in planning, budgeting and setting realistic expectations.
@@ -106,6 +103,20 @@ Jamstack builds most pages ahead of time and serves them as plain files from a g
 <h3>Cons</h3>
 <p>Complexity for real-time updates or personalized content. Build times grow with site size.</p>
 
+## The new kids on the block
+<aside><h3>Tech stack example</h3>
+<p>
+  Apache Kafka, AWS EventBridge, RabbitMQ for event-driven<br>
+  Domain-driven tools like Domain-Driven Design libraries (e.g. NestJS DDD, Axon Framework)
+</p> 
+</aside>
+In recent years two exciting approaches have gained momentum. Event-driven design lets components react to streams of events instead of direct calls. It feels like subscribing to a news feed where services publish and listen for messages on a common bus. That can improve scalability and resilience, though it also means tracing flows across multiple systems.
+
+Domain-driven design encourages teams to focus on business domains first, defining clear boundaries and language for each area of the system. It helps align code with real-world concepts, making complex logic more understandable. Both patterns aim to tame complexity by modeling the world more directly, but they bring their own learning curves and tooling needs.
+<h3>Pros</h3>
+<p>Improved scalability and alignment with business concepts. Easier to evolve complex domains.</p>
+<h3>Cons</h3>
+<p>Steep learning curve. Added complexity in tracing events or enforcing domain boundaries.</p>
 
 ## Choosing the right pattern
 
