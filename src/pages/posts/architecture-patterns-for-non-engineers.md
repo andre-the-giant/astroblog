@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Software architecture patterns for non-engineers"
 pubDate: 2025-05-28
-description: "A non-technical guide to common software architecture styles: monoliths, microservices, serverless and more—and why these choices matter for teams and products."
+description: "A non-technical guide to common software architecture styles: monoliths, microservices, serverless and more, and why these choices matter for teams and products."
 image:
   url: "architecture-patterns.jpg"
   alt: ""
