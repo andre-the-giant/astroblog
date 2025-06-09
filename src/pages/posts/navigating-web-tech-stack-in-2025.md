@@ -6,7 +6,7 @@ description: "A practical guide for choosing your web application tech stack in 
 image:
   url: "stack.jpg"
   alt: "Choosing a tech stack"
-tags: ["web-development", "tech-stack", "frontend-backend", "architecture", "devops", "ci-cd", "javascript", "typescript", "decision-making"]
+tags: ["web-development", "tech-stack", "frontend-backend", "architecture", "devops", "ci-cd", "javascript", "typescript", "decision-making", "for-non-engineering"]
 ---
 It all started with an interview question : "With an unlimited budget, what would your ideal web application stack look like?". It might sound fun and theoretical, but every choice matters and comes with trade-offs. Dreaming big is great, but if you're not careful, today's dream stack can quickly become tomorrow's maintenance headache. It was hard to answer this question, my head started to spin and imagine so much combination!
 

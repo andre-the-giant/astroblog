@@ -6,7 +6,7 @@ description: "Diverse teams make stronger products, but they're not easy to mana
 image:
   url: "team-collaboration.jpg"
   alt: "Illustration of diverse team members connecting through different styles"
-tags: ["collaboration", "communication", "diversity", "team-culture", "retrospective", "pulse-check", "team-readme", "psychological-safety", "trust", "feedback"]
+tags: ["collaboration", "communication", "diversity", "team-culture", "retrospective", "pulse-check", "team-readme", "psychological-safety", "trust", "feedback", "for-non-engineering"]
 ---
 
 
@@ -38,7 +38,6 @@ The second is the **anonymous pulse check**. Not everyone feels comfortable spea
 
 <aside>
 <h3>A few questions I like to include in a README</h3>
-
 - How do you like to receive feedback?
 - What should someone avoid when talking to you?
 - What makes you feel respected or included?

@@ -6,7 +6,7 @@ description: "Product defines the vision, but engineering keeps it real. Here's 
 image:
     url: "roadmap.jpg"
     alt: ""
-tags: ["roadmap", "collaboration", "engineering-priorities", "delivery", "alignment", "capacity-planning", "technical-debt", "team-health", "expectations", "risk-awareness", "trade-offs", "cross-functional"]
+tags: ["roadmap", "collaboration", "delivery", "alignment", "capacity-planning", "technical-debt", "team-health", "expectations", "risk-awareness", "trade-offs", "cross-functional", "for-non-engineering"]
 ---
 
 Roadmaps are often framed as a product thing where product managers define the priorities, talk to customers, shape features, then hand it off to engineering so they can build what's on the list. It sounds efficient, but it doesn't work for long.

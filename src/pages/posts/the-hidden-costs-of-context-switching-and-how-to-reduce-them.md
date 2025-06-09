@@ -6,7 +6,7 @@ description: 'Context switching is one of the biggest hidden productivity killer
 image:
     url: 'blogimage6.jpg'
     alt: ''
-tags: ["context-switching", "focus", "productivity", "interruptions", "deep-work", "task-management", "time-management", "workflow", "efficiency", "cognitive-load", "process", "burnout"]
+tags: ["context-switching", "focus", "productivity", "interruptions", "deep-work", "task-management", "time-management", "workflow", "efficiency", "cognitive-load", "process", "burnout", "for-non-engineering"]
 
 ---
 
