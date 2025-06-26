@@ -8,9 +8,9 @@ image:
   alt: "Engineering manager discussing code"
 tags: [ "leadership", "coding", "team-culture", "developer-experience", "mentorship", "technical-decision-making"]
 ---
-Being an Engineering Manager means dealing with much more than code. You manage teams, shape strategies, communicate with stakeholders, and make critical technical decisions. Yet, there's an ongoing debate: how important is coding experience for an Engineering Manager? Do you really need coding skills to effectively manage developers?
+Dealing with code is just one aspect of being an engineering manager. You make important technical decisions, lead teams, develop strategies, and interact with stakeholders. However, the question of how crucial coding experience is for an engineering manager is still up for debate. Does managing developers effectively need coding knowledge?
 
-While you don't need to write production code every day, understanding developers' work, mindset, and challenges significantly boosts your leadership. I believe deeply that having coding experience makes you a more effective EM. Let me explain why.
+Understanding the task, mindset, and difficulties faced by developers greatly improves your leadership, even if you don't have to write production code every day. I firmly think that being able to code makes you a more successful EM. Let me tell you why.
 
 ## Understanding the developer experience
 
