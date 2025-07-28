@@ -26,6 +26,11 @@
 }
 
 
+@view-transition {
+ navigation: auto;
+}
+
+
 
 
 
@@ -43,12 +48,13 @@ html {
     max-width: 80ch;
     padding: 1rem;
     line-height: 1.5;
-  }
+     }
   
   * {
     box-sizing: border-box;
   }
-  
+  /* a{       cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' style='font-size:64px'><text y='50'>🛫</text></svg>"), auto;
+  } */
   h1, h2, h3, h4, h5, h6{
     font-family: var(--font-heading);
     font-weight: 400;
@@ -59,7 +65,8 @@ html {
     margin: 2rem 0;
     font-size: 2.4rem;
     line-height:2.4rem;
-    
+
+
   }
   h2{
     font-size:1.8rem;
@@ -77,7 +84,7 @@ html {
     text-decoration: none;
     display:inline-block;
     padding: 0 .5rem;
-  }
+ }
   blockquote{
       border-left: 5px solid var(--color-accent);
       margin-left:1rem;
