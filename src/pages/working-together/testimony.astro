@@ -1,0 +1,147 @@
+---
+/**
+ * File: src/pages/work-together/testimony.astro
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = 'share a testimony';
+const linkedinRecUrl = 'https://www.linkedin.com/recs/give?senderId=andrecollin';
+const emailTo = 'andrecollin.toronto+NOSPAM@gmail.com';
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <section class="questions">
+    <h1 class="title">Share a testimony</h1>
+
+    <p class="intro">
+      If we've worked together and you're open to writing a short testimony, thank you! This helps a lot.
+      You can either send me an email using the questions below, or leave a recommendation directly on LinkedIn:
+      <a class="button" href={linkedinRecUrl} target="_blank" rel="noopener noreferrer">
+        Write a LinkedIn recommendation
+      </a>.
+    </p>
+
+    <div class="picker" id="picker" data-emailto={emailTo}>
+      <label for="relationship" class="label">How did we work together?</label>
+      <select id="relationship" class="select">
+        <option value="" selected disabled>— choose one —</option>
+        <option value="peer">We worked together as peers</option>
+        <option value="you-managed-me">You managed me directly</option>
+        <option value="i-managed-you">I managed you directly</option>
+        <option value="same-company">We worked together in the same company</option>
+      </select>
+    </div>
+
+    <div id="questionsBlock" class="questions hidden" aria-live="polite">
+      <h2 class="questions-title">Suggested questions</h2>
+      <p class="hint">Pick any that feel right. Short answers are perfect.</p>
+      <ul id="questionsList" class="list"></ul>
+        
+      <div class="actions">
+        <a id="emailButton" class="button" href="#">Write an email</a>
+        <small class="note">This opens your email app.</small>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .questions {margin-bottom:2rem}
+    .title { font-size: clamp(1.6rem, 3.2vw, 2rem); margin: 0 0 0.5rem; }
+    .intro { margin: 0 0 1.5rem; line-height: 1.6; }
+    .link { text-decoration: underline; }
+    .picker { margin: 1.25rem 0 1.5rem; }
+    .label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+    .select { width: 100%; padding: 0.65rem 0.75rem; border-radius: 0.5rem; border: 1px solid var(--color-border, #ccc); background: var(--color-bg, #fff); }
+    .questions { margin-top: 2rem; }
+    .questions-title { margin: 0 0 0.25rem; font-size: 1.25rem; }
+    .hint { margin: 0 0 0.75rem; }
+    .list { margin: 0 0 1rem 1.25rem; display: grid; gap: 0.5rem; }
+    .hidden { display: none; }
+  </style>
+
+  <script>
+const questionsByType = {
+  "peer": [
+    "What was it like working with me as a teammate?",
+    "How did we collaborate on projects or problem-solving?",
+    "Did you feel I brought good energy or clarity to the team?",
+    "How did we handle challenges or deadlines together?",
+    "What kind of impact do you think I had on our team dynamic?",
+    "How would you describe my communication or collaboration style?",
+    "Was there a moment where you felt I helped move things forward?",
+    "How did we make each other's work easier or better?",
+  ],
+  "you-managed-me": [
+    "How did I bring value to your team?",
+    "How did I collaborate or communicate with you as my manager?",
+    "Did I help you bring your leadership vision to the team?",
+    "How did I contribute to aligning the team around priorities?",
+    "What stood out to you about how I supported the developers or created good working conditions?",
+    "How did I approach technical topics or learning new things?",
+    "Was I proactive in identifying problems or offering solutions?",
+    "How did I adapt to change or shifting priorities?",
+    "What kind of trust or ownership did I show in my work?",
+    "What overall impact did I have on your team's success?",
+  ],
+  "i-managed-you": [
+    "How did I support you in your work or growth?",
+    "Did you feel I helped you focus on what mattered most?",
+    "How did I handle challenges or protect the team from distractions?",
+    "What made you feel trusted or empowered when we worked together?",
+    "How did I show that I cared about your well-being or balance?",
+    "Can you think of a time when I gave helpful feedback or coaching?",
+    "How did I encourage you to learn or think about your career goals?",
+    "What did you appreciate about how I communicated or led the team?",
+    "How did I celebrate wins or recognize people's effort?",
+    "What made me a good manager to work with?",
+  ],
+  "same-company": [
+    "How did we interact or collaborate across teams?",
+    "What kind of impact did you notice from my work or leadership?",
+    "Did I help make communication or collaboration easier across the company?",
+    "How did I contribute to a positive or inclusive culture?",
+    "Was there a project where my role stood out to you?",
+    "How did I handle moments of change or pressure?",
+    "What did you notice about how I connected people or ideas?",
+    "If someone asked what it's like to work with me, what would you say?",
+  ]
+};
+
+
+
+    const relSelect = document.getElementById('relationship');
+    const block = document.getElementById('questionsBlock');
+    const list = document.getElementById('questionsList');
+    const emailBtn = document.getElementById('emailButton');
+
+    const SUBJECTS = {
+      "peer": "Testimony – We worked together as peers",
+      "you-managed-me": "Testimony – You managed me directly",
+      "i-managed-you": "Testimony – I managed you directly",
+      "same-company": "Testimony – We worked in the same company"
+    };
+
+    function buildMailtoHref(type, questions) {
+      const emailtoblock = document.getElementById("picker");
+      const subject = SUBJECTS[type] || "Testimony";
+      const greeting = "Hi André,";
+      const preface = "Here are my thoughts about working together";
+      const body = `${greeting}%0A%0A${preface}`;
+      const href = `mailto:${emailtoblock.dataset.emailto}?subject=${encodeURIComponent(subject)}&body=${body}`;
+      return href;
+    }
+
+    relSelect?.addEventListener('change', () => {
+      const type = relSelect.value;
+      list.innerHTML = '';
+      const qs = questionsByType[type] || [];
+      qs.forEach(q => {
+        const li = document.createElement('li');
+        li.textContent = q;
+        list.appendChild(li);
+      });
+      emailBtn.href = buildMailtoHref(type, qs);
+      block.classList.toggle('hidden', qs.length === 0);
+    });
+  </script>
+</BaseLayout>

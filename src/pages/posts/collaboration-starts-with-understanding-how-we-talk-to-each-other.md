@@ -49,7 +49,7 @@ The second is the **anonymous pulse check**. Not everyone feels comfortable spea
 
 And the third is the **team README**. A team README is a short document written by each team member that helps others understand how to work with them. It's not a set of hard rules, it's a personal guide meant to reduce friction and encourage trust by making invisible preferences visible. When someone shares how they prefer to communicate, how they like to receive feedback, or what they need to feel safe in a discussion, it helps the rest of the team show up more thoughtfully. It removes a layer of guessing and gives everyone a baseline of understanding.
 
-These questions aren’t exhaustive. They’re just a start. What matters is that each person has a chance to reflect and share something honest about how they show up at work.
+These questions aren't exhaustive. They're just a start. What matters is that each person has a chance to reflect and share something honest about how they show up at work.
 The README helps each person put their preferences into words so others don't have to guess.
 
 &nbsp;

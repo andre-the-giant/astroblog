@@ -2,14 +2,19 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import WorkingTogetherCard from '../components/WorkingTogetherCard.astro';
 const pageTitle = "Working together";
-const entries = await Astro.glob('./working-together/*.astro');
+const entries = await Astro.glob('./testimonies/*.astro');
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-
+<style>
+.testimonials{
+  margin:3rem 0
+}
+</style>
 <h2>Recommendations / Testimony</h2>
-<p>This page is dedicates to all the awesome people I have worked with in my career. Some of them have taken the time to write about what working together was. </p>
-
+<p> This page is a little tribute to the amazing people I've had the chance to work with over the years. I'm deeply grateful to those who took the time to share what it was like working together. Your words mean a lot.
+</p>
+<p>If we've worked together and you'd like to add your voice,  <a href="/working-together/testimony" class="button">I'd love to read your thoughts.</a></p>
 <div class="testimonials">
   {entries.map((Entry) => (
     <WorkingTogetherCard

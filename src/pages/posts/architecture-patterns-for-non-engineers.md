@@ -57,7 +57,7 @@ This pattern keeps the convenience of one big box but divides it inside into wel
 <p>Clear internal structure and ownership. Single deploy pipeline. Easier refactoring than microservices.</p>
 
 <h3>Cons</h3>
-<p>Still a single deployable unit. Can slip into coupling if boundaries aren’t enforced.</p>
+<p>Still a single deployable unit. Can slip into coupling if boundaries aren't enforced.</p>
 
 
 
@@ -80,7 +80,7 @@ Often, the part users interact with (front end) is built and deployed separately
 <aside><h3>Tech stack example</h3>
 <p>AWS Lambda, Azure Functions, Cloudflare Workers  </p>
 </aside>
-Serverless means writing small pieces of code that run only when needed, without managing servers. It’s like electricity you pay for by the minute. It can scale automatically, but it can also bring challenges with troubleshooting, startup delays and monitoring many tiny functions.
+Serverless means writing small pieces of code that run only when needed, without managing servers. It's like electricity you pay for by the minute. It can scale automatically, but it can also bring challenges with troubleshooting, startup delays and monitoring many tiny functions.
 
 <h3>Pros</h3>
 <p>No server management. Automatic scaling. Pay only for usage.</p>
@@ -128,7 +128,7 @@ Engineering partners also need to know that it can be hard to change architectur
 
 ## How engineering managers guide these decisions
 
-As an engineering manager, your role is to frame these options for stakeholders. Start by identifying the team’s main challenges: are deployments slow, is scaling hard, do new team members struggle to contribute? Present each pattern with its pros and cons in plain language. Match the choice to business needs and team capabilities. Finally, revisit decisions regularly as the product and team evolve.
+As an engineering manager, your role is to frame these options for stakeholders. Start by identifying the team's main challenges: are deployments slow, is scaling hard, do new team members struggle to contribute? Present each pattern with its pros and cons in plain language. Match the choice to business needs and team capabilities. Finally, revisit decisions regularly as the product and team evolve.
 
 
 

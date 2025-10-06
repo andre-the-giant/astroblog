@@ -18,7 +18,7 @@ Managing developers isn't just about assigning tasks or tracking velocity. You'r
 
 It helps you understand productivity obstacles like frequent interruptions, context switching, or cognitive overload. Having faced these challenges yourself makes you better at addressing them proactively and effectively.
 
-I experienced this firsthand while reviewing code. When I noticed a senior developer’s reviews were superficial and low-quality, it signaled deeper concerns. Understanding code allowed me to quickly spot signs of disengagement or possible burnout, enabling meaningful conversations and proactive solutions.
+I experienced this firsthand while reviewing code. When I noticed a senior developer's reviews were superficial and low-quality, it signaled deeper concerns. Understanding code allowed me to quickly spot signs of disengagement or possible burnout, enabling meaningful conversations and proactive solutions.
 
 ## Better technical and strategic decisions
 

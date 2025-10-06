@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Job searching is tough and rejection hurts. I feel it too!"
 pubDate: 2025-04-29
-description: "Job searching is exhausting and rejection can feel deeply personal. Here’s how I handle rejection, what practical steps I take to improve my applications, and why you’re not alone in this."
+description: "Job searching is exhausting and rejection can feel deeply personal. Here's how I handle rejection, what practical steps I take to improve my applications, and why you're not alone in this."
 image:
   url: "rejection.jpg"
   alt: "This is how I feel after every rejection letter"

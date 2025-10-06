@@ -60,7 +60,7 @@ const relationshipText =
     <p class="excerpt">“{excerpt}”</p>
 
     <details class="expand">
-      <summary>{`Read more from ${name}`} </summary>
+      <summary class="button">{`Read more from ${name}`} </summary>
       <div class="more">
         <slot />
       </div>
@@ -122,14 +122,7 @@ const relationshipText =
   }
 
   .expand summary {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0.2rem 0.8rem;
     font-size:.7rem;
-    background-color:var(--color-accent);
-    color:var(--color-accent-light);
-    text-decoration: none;
-    display:inline-block;
   }
 
 
