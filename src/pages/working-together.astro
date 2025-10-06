@@ -7,46 +7,24 @@ const entries = await Astro.glob('./working-together/*.astro');
 
 <BaseLayout pageTitle={pageTitle}>
 
-  <main id="main-content">
-    <header>
-      <h2>Recommendations / Testimony</h2>
-      <p>This page is dedicates to all the awesome people I have worked with in my career. Some of them have taken the time to write about what working together was. </p>
-    </header>
+<h2>Recommendations / Testimony</h2>
+<p>This page is dedicates to all the awesome people I have worked with in my career. Some of them have taken the time to write about what working together was. </p>
 
-    <section aria-labelledby="testimonials-heading">
-      <h3 id="testimonials-heading" class="visually-hidden">testimonials</h3>
+<div class="testimonials">
+  {entries.map((Entry) => (
+    <WorkingTogetherCard
+      name={Entry.meta.name}
+      picture={Entry.meta.picture}
+      excerpt={Entry.meta.excerpt}
+      company={Entry.meta.company}
+      linkedin={Entry.meta.linkedin}
+      relationship={Entry.meta.relationship}
+    >
+      <Entry.default />
+    </WorkingTogetherCard>
+  ))}
+</div>
 
-      <div class="grid">
-        {entries.map((Entry) => (
-          <WorkingTogetherCard
-            name={Entry.meta.name}
-            picture={Entry.meta.picture}
-            excerpt={Entry.meta.excerpt}
-            company={Entry.meta.company}
-            linkedin={Entry.meta.linkedin}
-            relationship={Entry.meta.relationship}
-          >
-            <Entry.default />
-          </WorkingTogetherCard>
-        ))}
-      </div>
-    </section>
-  </main>
-
-  <style>
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1rem;
-      margin-top: 1.25rem;
-    }
-    .visually-hidden {
-      position: absolute !important;
-      height: 1px; width: 1px;
-      overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
-      white-space: nowrap; border: 0; padding: 0; margin: -1px;
-    }
-  </style>
 
 
 </BaseLayout>
