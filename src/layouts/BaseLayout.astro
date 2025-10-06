@@ -1,6 +1,7 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const {pageTitle,description,isblog, pubdate, imagepath}=Astro.props;
 const currentUrl = Astro.url.href;
@@ -76,5 +77,6 @@ const jsonLdData = (isblog=="true" && imagepath)?{
     <Header />
     <Navigation />
     <slot />
+    <Footer />
 </body>
 </html>

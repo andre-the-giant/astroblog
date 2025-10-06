@@ -1,0 +1,62 @@
+---
+export interface Props {
+  name: string;
+  picture: string; // path from /public
+  excerpt: string;
+  company: string;
+  linkedin: URL;
+  relationship: 'manager' | 'managed' | 'peer';
+  readMoreLabel?: string;
+}
+
+const {
+  name,
+  picture,
+  excerpt,
+  company,
+  linkedin,
+  relationship,
+  readMoreLabel = 'Read more',
+} = Astro.props;
+---
+
+<article class="card">
+  <header>
+    <h3 class="name">{name}</h3>
+    <p class="meta">
+    {relationship === "manager" && "Was my manager"}
+    {relationship === "peer" && "Was my peer"}
+    {relationship === "managed" && "Was one of my direct reports"}
+  </span> at 
+  <strong>{company}</strong> ·</p>
+  </header>
+
+  <figure>
+    <img src={picture} alt={`Portrait of ${name}`} loading="lazy" />
+    <figcaption class="sr-only">{name} — {company}</figcaption>
+  </figure>
+
+  <p class="excerpt">{excerpt}</p>
+
+  <details>
+    <summary>
+      <button type="button" aria-label={`Read more about ${name}`}>{readMoreLabel}</button>
+    </summary>
+    <div class="more">
+      <slot />
+    </div>
+  </details>
+</article>
+
+<style>
+  .card { display: grid; gap: 0.75rem; padding: 1rem; border: 1px solid var(--surface-3, #e5e7eb); border-radius: 0.75rem; }
+  header .name { margin: 0; font-size: 1.125rem; }
+  .meta { margin: 0; color: var(--text-dim, #6b7280); }
+  figure { margin: 0; }
+  img { width: 96px; height: 96px; object-fit: cover; border-radius: 9999px; }
+  .excerpt { margin: 0.25rem 0 0.25rem; }
+  details > summary { list-style: none; }
+  details > summary::-webkit-details-marker { display: none; }
+  summary button { cursor: pointer; }
+  .more { margin-top: 0.5rem; }
+</style>
