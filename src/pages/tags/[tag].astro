@@ -1,83 +1,33 @@
 ---
-import { Picture } from 'astro:assets';
-import defaultImage from '../../assets/images/default.jpg';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPostCard from '../../components/BlogPostCard.astro';
+import { getCollection } from 'astro:content';
 
-export interface Props {
-  name: string;
-  picture: string; // e.g. 'fraser.jpg'
-  excerpt: string;
-  company: string;
-  linkedin: URL;
-  relationship: 'manager' | 'managed' | 'peer';
-  readMoreLabel?: string;
+const allPosts = await getCollection('blog');
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+  const uniqueTags = [...new Set(sortedPosts.map((post: any) => post.data.tags).flat())];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post: any) => post.data.tags.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
 }
 
-const {
-  name,
-  picture,
-  excerpt,
-  company,
-  linkedin,
-  relationship,
-  readMoreLabel = 'Read more',
-} = Astro.props;
-
-// Import all testimony images at build time
-const imageMap = import.meta.glob('../../assets/images/testimony/*', { eager: true });
-
-// Helper to resolve the image path or return null
-const resolveImage = (filename: string) => {
-  const path = `../../assets/images/testimony/${filename}`;
-  return filename && imageMap[path] ? imageMap[path].default : null;
-};
-
-// Use resolved image or fallback to default
-const imagePath = resolveImage(picture) || defaultImage;
-
-// Relationship text
-const relationshipText =
-  relationship === 'manager'
-    ? 'Was my manager'
-    : relationship === 'peer'
-    ? 'Was my peer'
-    : 'Was one of my direct reports';
+const { tag } = Astro.params;
+const { posts } = Astro.props;
 ---
-
-<article class="card">
-  <header>
-    <h3 class="name">{name}</h3>
-    <p class="meta">
-      {relationshipText} at <strong>{company}</strong> ·{' '}
-      <a href={String(linkedin)} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </p>
-  </header>
-
-  <figure>
-    <img src={imagePath} alt={`Portrait of ${name}`} loading="lazy" width="96" height="96" />
-    <figcaption class="sr-only">{name} — {company}</figcaption>
-  </figure>
-
-  <p class="excerpt">{excerpt}</p>
-
-  <details>
-    <summary>
-      <button type="button" aria-label={`Read more about ${name}`}>{readMoreLabel}</button>
-    </summary>
-    <div class="more">
-      <slot />
-    </div>
-  </details>
-</article>
-
-<style>
-  .card { display: grid; gap: 0.75rem; padding: 1rem; border: 1px solid var(--surface-3, #e5e7eb); border-radius: 0.75rem; }
-  header .name { margin: 0; font-size: 1.125rem; }
-  .meta { margin: 0; color: var(--text-dim, #6b7280); }
-  figure { margin: 0; }
-  img { width: 96px; height: 96px; object-fit: cover; border-radius: 9999px; }
-  .excerpt { margin: 0.25rem 0 0.25rem; }
-  details > summary { list-style: none; }
-  details > summary::-webkit-details-marker { display: none; }
-  summary button { cursor: pointer; }
-  .more { margin-top: 0.5rem; }
-</style>
+<BaseLayout pageTitle={tag} image="andrecollin.jpg">
+  <h1>Posts tagged with <<&nbsp;{tag}&nbsp;>></h1>
+<ul>
+    {posts.map((post) => {
+        return(
+        <BlogPostCard postdata={post} postcardstyle="blog" />
+    );
+      })}
+</ul>
+</BaseLayout>
