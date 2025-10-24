@@ -2,18 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import WorkingTogetherCard from '../components/WorkingTogetherCard.astro';
 const pageTitle = "Working together";
-const raw = import.meta.glob('../content/testimonies/*.md', { eager: true });
-const entries = Object.values(raw).map((m) => ({
-  frontmatter: m.frontmatter,
-  Content: m.Content
-}));
-// Sort by year DESC, then by name ASC
-entries.sort((a, b) =>
-  (b.frontmatter.year ?? 0) === (a.frontmatter.year ?? 0)
-    ? String(a.frontmatter.name || '').localeCompare(String(b.frontmatter.name || ''))
-    : (b.frontmatter.year ?? 0) - (a.frontmatter.year ?? 0)
-);
+import { getCollection } from 'astro:content';
 
+const allTestimonies = await getCollection('testimonies');
+const sortedTestimonies = allTestimonies.sort((a, b) =>
+  b.data.year === a.data.year
+    ? a.data.name.localeCompare(b.data.name)
+    : b.data.year - a.data.year
+);
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -27,20 +23,19 @@ entries.sort((a, b) =>
 </p>
 <p>If we've worked together and you'd like to add your voice,  <a href="/working-together/testimony" class="button">I'd love to read your thoughts.</a></p>
 <div class="testimonials">
-  {entries.map(({ frontmatter, Content }) => (
+  {allTestimonies.map((testimony) => (
     <WorkingTogetherCard
-      name={frontmatter.name}
-      picture={frontmatter.picture}
-      excerpt={frontmatter.excerpt}
-      company={frontmatter.company}
-      linkedin={frontmatter.linkedin}
-      relationship={frontmatter.relationship}
+      name={testimony.data.name}
+      picture={testimony.data.picture}
+      excerpt={testimony.data.excerpt}
+      company={testimony.data.company}
+      linkedin={testimony.data.linkedin}
+      relationship={testimony.data.relationship}
+      readmore="true"
     >
-      <Content />
+       <div class="testimonial-body" set:html={testimony.body} />
     </WorkingTogetherCard>
   ))}
 </div>
-
-
 
 </BaseLayout>

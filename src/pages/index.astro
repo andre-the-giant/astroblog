@@ -1,12 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPostCard from '../components/BlogPostCard.astro';
+import WorkingTogetherCard from '../components/WorkingTogetherCard.astro';
 const pageTitle="Andre Collin - Portfolio / Blog";
 const description = "Andre Collin's portfolio and blog about software engineering, leadership, and agile methodologies.";
 
 import { getCollection } from 'astro:content';
 const allPosts = await getCollection('blog');
 const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const allTestimonies = await getCollection('testimonies');
+const sortedTestimonies = allTestimonies.sort((a, b) =>
+  b.data.year === a.data.year
+    ? a.data.name.localeCompare(b.data.name)
+    : b.data.year - a.data.year
+);
 ---
 <BaseLayout pageTitle={pageTitle} description={description} isblog="false">
   <h1>{pageTitle}</h1>
@@ -30,11 +38,22 @@ const sortedPosts = allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pu
   </div><p>Hello ! I'm a software engineering manager and Agile coach/leader who has been building front-end interface and web applications for 25 years. </p>
   <p>I led teams as a senior front-end developer for GroupeMedia TFO (the Ontario French educational TV channel), for The City of Toronto, I also had a chance to work for some of the biggest newspapers like the Globe and Mail, the National Post (and all the local and national newspapers owned by Postmedia Network). My passion for tech made me work for Phoenix Geophysics and more recently for Ecobee.</p>
   <p>And... YES! I am currently looking for a new challenge!</p>
+
+    <h2>Latest testimony</h2>
+  <WorkingTogetherCard
+      name={allTestimonies[0].data.name}
+      picture={allTestimonies[0].data.picture}
+      excerpt={allTestimonies[0].data.excerpt}
+      company={allTestimonies[0].data.company}
+      linkedin={allTestimonies[0].data.linkedin}
+      relationship={allTestimonies[0].data.relationship}
+      readmore="false"
+    >
+    </WorkingTogetherCard>
+    <p>Visit the <a href="/working-together">Working together</a> page for more testimonies</p>
   <h2>My Blog</h2>
   <p>I wrote a few articles about <a href="/tags/my-5-core-values">my 5 core values</a> as engineering manager, and about a few topics related to leading a team of software engineers. You're welcome to <a href="/blog">take a look at my blog</a> and let me know what you think!</p>
   <h2>Latest post</h3>
   <ul><BlogPostCard postdata={sortedPosts[0]} postcardstyle="home" /></ul>
-
-  
 
 </BaseLayout>
