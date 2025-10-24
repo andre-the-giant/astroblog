@@ -1,12 +1,11 @@
 ---
-export const meta = {
-  name: 'Vincent Groux',
-  picture: 'vincent.jpg',
-  linkedin: 'https://www.linkedin.com/in/vgroux/',
-  excerpt: 'Andre makes the workplace better: bringing energy, support, and joy to the team',
-  company: 'Postmedia',
-  relationship: 'manager',
-};
+  name: 'Vincent Groux'
+  picture: 'vincent.jpg'
+  linkedin: 'https://www.linkedin.com/in/vgroux/'
+  excerpt: 'Andre makes the workplace better: bringing energy, support, and joy to the team'
+  company: 'Postmedia'
+  relationship: 'manager'
+  year: 2022
 ---
 
 <p>I've had the chance to work with Andre and can't recommend him enough. If you need a strong frontend team lead or engineering manager, he's the one. </p>

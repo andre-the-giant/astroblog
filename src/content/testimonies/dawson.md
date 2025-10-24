@@ -1,12 +1,11 @@
 ---
-export const meta = {
-  name: 'Dawson Guilbeault',
-  picture: 'dawson.jpg',
-  linkedin: 'https://www.linkedin.com/in/dawson-guilbeault/',
-  excerpt: 'has a keen understanding of business, and design and can contributes at all levels on a project',
-  company: 'The Globe And Mail',
-  relationship: 'peer',
-};
+  name: 'Dawson Guilbeault'
+  picture: 'dawson.jpg'
+  linkedin: 'https://www.linkedin.com/in/dawson-guilbeault/'
+  excerpt: 'André has a keen understanding of business, and design and can contributes at all levels on a project'
+  company: 'The Globe And Mail'
+  relationship: 'peer'
+  year: 2016
 ---
 <p>André is an extremely talented developer and a pleasure to work with. Not only able to execute, he has a keen understanding of business, and design and can contributes at all levels on a project.</p>
 <p> I really enjoyed collaborating with André, and hope to get a chance to do so again. He's also an amazing cook!</p>

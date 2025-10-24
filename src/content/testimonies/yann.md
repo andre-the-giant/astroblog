@@ -1,12 +1,11 @@
 ---
-export const meta = {
-  name: 'Yann Avram',
-  picture: 'yann.jpg',
-  linkedin: 'https://www.linkedin.com/in/exploration/',
-  excerpt: 'I appreciate his level off details in everything he is undertaking',
-  company: 'Phoenix Geophysics',
-  relationship: 'manager',
-};
+  name: 'Yann Avram'
+  picture: 'yann.jpg'
+  linkedin: 'https://www.linkedin.com/in/exploration/'
+  excerpt: 'I appreciate his level off details in everything he is undertaking'
+  company: 'Phoenix Geophysics'
+  relationship: 'manager'
+  year: 2021
 ---
 
 

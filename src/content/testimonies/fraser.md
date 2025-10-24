@@ -1,13 +1,11 @@
 ---
-export const meta = {
-  name: 'Fraser Reed',
-  picture: 'fraser.jpg',
-  linkedin: 'https://www.linkedin.com/in/fraserreed',
-  excerpt: 'Andre was a champion in improving many of our agile processes as well as increasing our development and accessibility standards',
-  company: 'Postmedia',
-  relationship: 'peer',
-};
-
+  name: 'Fraser Reed'
+  picture: 'fraser.jpg'
+  linkedin: 'https://www.linkedin.com/in/fraserreed'
+  excerpt: 'Andre was a champion in improving many of our agile processes as well as increasing our development and accessibility standards'
+  company: 'Postmedia'
+  relationship: 'peer'
+  year: 2022
 ---
 
 <p>
