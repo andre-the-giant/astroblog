@@ -28,7 +28,7 @@ But not everyone wants more responsibility. I also knew a senior full-stack engi
 
 ### Help engineers define their own goals
 
-Not everyone wants to manage people, and not everyone wants to stay purely technical. The key is to ask, listen, and adapt. A structured career conversation should go beyond “where do you see yourself in five years?” It should explore what kind of work excites them, where they feel the most impact, and what challenges they enjoy solving.
+Not everyone wants to manage people, and not everyone wants to stay purely technical. The key is to ask, listen, and adapt. A structured career conversation should go beyond "where do you see yourself in five years?" It should explore what kind of work excites them, where they feel the most impact, and what challenges they enjoy solving.
 
 ### Build structured but flexible career paths
 

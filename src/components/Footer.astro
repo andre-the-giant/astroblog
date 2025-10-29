@@ -1,8 +1,35 @@
 ---
+import { getCollection } from 'astro:content';
+import WorkingTogetherCard from '../components/WorkingTogetherCard.astro';
+
+const allTestimonies = await getCollection('testimonies');
+const randomIndex = Math.floor(Math.random() * allTestimonies.length);
+const t = allTestimonies[randomIndex].data;
 ---
 
 <style>
+  footer {
+    padding: 1rem 1rem;
+    border-top: 1px solid var(--color-accent);
+    margin:3rem auto;
+  }
+  .more {
+    margin-top: .75rem;
+  }
 </style>
+
 <footer>
-  
+    <h2 class="heading">Testimonies</h2>
+    <WorkingTogetherCard
+      name={t.name}
+      picture={t.picture}
+      excerpt={t.excerpt}
+      company={t.company}
+      linkedin={t.linkedin}
+      relationship={t.relationship}
+      readmore="false"
+    >
+    </WorkingTogetherCard>
+    <p class="more">Visit the <a href="/working-together">Working together</a> page for more testimonies.</p>
+  </div>
 </footer>

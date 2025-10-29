@@ -3,7 +3,7 @@ import Navigation from '../components/Navigation.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-const {pageTitle,description,isblog, pubdate, imagepath}=Astro.props;
+const {pageTitle,description,isblog, pubdate, imagepath, displayTestimony}=Astro.props;
 const currentUrl = Astro.url.href;
 const baseUrl = Astro.site;
 const andrecollinimage = baseUrl+'andrecollin.jpg';
@@ -77,6 +77,9 @@ const jsonLdData = (isblog=="true" && imagepath)?{
     <Header />
     <Navigation />
     <slot />
-    <Footer />
+    {displayTestimony && (
+        <Footer />
+    )}
+
 </body>
 </html>

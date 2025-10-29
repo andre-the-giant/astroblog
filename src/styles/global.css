@@ -52,6 +52,7 @@ html {
   
   * {
     box-sizing: border-box;
+    user-select: none;
   }
   /* a{       cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' style='font-size:64px'><text y='50'>🛫</text></svg>"), auto;
   } */
@@ -174,6 +175,7 @@ aside ol li p{
         float:right;
         width:33%;
         }
+        body{padding:0 1rem}
 }
 @media only screen and (min-width: 1000px) {
     aside{

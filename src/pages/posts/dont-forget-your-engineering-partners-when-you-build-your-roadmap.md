@@ -17,7 +17,7 @@ If engineering managers aren't part of shaping the roadmap, it turns into a wish
 
 Product brings the customer and business lens, but engineering managers bring the technical one to provide clarity.
 
-That one-line feature? It needs codes that impact four services. <br>That experiment idea? We can mock it in a day if we skip analytics for now. <br>That “quick UI tweak”? It's blocked by three unresolved tech debt tickets.
+That one-line feature? It needs codes that impact four services. <br>That experiment idea? We can mock it in a day if we skip analytics for now. <br>That "quick UI tweak"? It's blocked by three unresolved tech debt tickets.
 
 These are inputs, not complaints, and without that perspective roadmaps fall apart on first contact with reality.
 
