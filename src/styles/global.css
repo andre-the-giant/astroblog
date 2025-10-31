@@ -53,6 +53,7 @@ html {
   * {
     box-sizing: border-box;
     user-select: none;
+    font-display: swap;
   }
   /* a{       cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' style='font-size:64px'><text y='50'>🛫</text></svg>"), auto;
   } */
