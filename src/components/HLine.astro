@@ -1,0 +1,43 @@
+---
+const {
+  invert = false,
+  thickness = 3,
+  color = 'var(--color-accent)'
+} = Astro.props;
+
+const invertClass = invert ? 'inverted' : '';
+const stroke = thickness>6?6:thickness;
+// The mask uses white stroke as the visible area
+const maskSvg = encodeURIComponent(`
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 30' preserveAspectRatio='none'>
+    <path d='M-1 28 C 28 7 72 7 101 28'
+      fill='none'
+      stroke='white'
+      stroke-width='${stroke}'
+      stroke-linecap='square' />
+  </svg>
+`);
+---
+
+<style>
+.curved-line {
+  width: 100%;
+  height: 30px;
+  margin: 20px 0;
+  background-color: var(--line-color);
+  transform: scaleY(-1);
+}
+
+.curved-line.inverted {
+  transform: scaleY(1);
+}
+</style>
+
+<div
+  class={`curved-line ${invertClass}`}
+  style={`
+    --line-color: ${color};
+            mask: url("data:image/svg+xml,${maskSvg}") center / 100% 100% no-repeat;
+  `}
+></div>
+ 
