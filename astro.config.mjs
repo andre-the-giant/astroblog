@@ -1,10 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
   outDir: 'build',
   site:"https://andre-collin.3615toronto.ca",
-  integrations: [sitemap()]
+  integrations: [sitemap(), mdx()]
 });

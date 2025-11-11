@@ -8,7 +8,7 @@ image:
     alt: '&copy; bombingscience.com (I think)'
 tags: ["psychological-safety", "trust", "postmortem", "incident-response", "team-culture", "communication", "accountability", "failure", "ownership", "leadership", "transparency", "conflict-avoidance"]
 ---
-<aside>
+<aside class="sidenote">
 <h3>6 red flags your team isn't blame-free</h3>
 <ol>
   <li>

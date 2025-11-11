@@ -5,7 +5,7 @@
   excerpt: "André's dedication to mentoring have made a significant impact on my professional growth"
   company: 'Postmedia and ecobee'
   relationship: 'managed'
-  year: 2023
+  year: 2022
 ---
 <p>André has been a great mentor for me over the years. I first met André during our tenure at Postmedia, where we collaborated closely on AODA compliance and front-end architecture. With André's encouragement, I accepted a front-end technical lead position in the digital engineering department. André has continued to support me in my career, always generous with his time and helping me during moments when my confidence has wavered.</p>
 

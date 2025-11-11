@@ -1,0 +1,82 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: Building psychological safety as a technical discipline
+pubDate: 2025-11-11
+image:
+  url: "psychosafety.jpg"
+  alt: ""
+description: Psychological safety isn’t a soft skill. It’s infrastructure that keeps teams experimenting, learning, and moving forward.
+tags: ["retrospectives", "leadership", "trust","psychological-safety", "team-culture", "developer-experience",]
+---
+
+import BookCard from '../../components/BookCard.astro'
+
+Last year, during a retro, one of our developers said something that made me pause.  
+"I always wait until someone else speaks first. If no one says anything, I assume I shouldn’t either." 
+
+That one sentence said more about our culture than any dashboard ever could. It reminded me that even good teams can slip into a habit of silence.  
+Silence. Something about silence makes me sick. Zack de la Rocha said it first, but I’ve felt it in every meeting where no one speaks. Silence is expensive. It slows decisions, hides problems, and turns learning into luck.  
+
+We often describe psychological safety as a soft skill. I’ve come to see it as a system.  
+Like any system, it needs design, feedback, and maintenance.  
+
+## The social architecture behind delivery
+
+In *Peopleware: Productive Projects and Teams*, Tom DeMarco and Timothy Lister describe something most managers already feel in their gut. Software projects rarely fail because of code or tools. They fail because of the way people work together. The book came out in the 1980s, but its lessons still apply. Every time I see talented engineers hesitate to speak up, I think of their line:  
+> The major problems of our work are not so much technological as sociological.
+
+You can build the perfect process, yet if people hold back ideas or concerns, everything slows down. It’s not visible in Jira or your metrics, but you feel it in the room.  
+That’s the hidden architecture of delivery.  
+
+## Treat it like an engineering system
+
+If psychological safety behaves like a system, we can build it like one. Not with slogans or all hands talks, but with habits that reinforce trust over time.  
+
+- **Use retrospectives as diagnostics**  
+Notice who speaks and who stays quiet.  
+- **Watch for delays in raising issues**  
+Long silences after incidents are signals that something feels unsafe.  
+- **Look at participation**  
+Who comments on pull requests or proposes changes in planning? The pattern matters.  
+- **Make work visible**  
+Dashboards, async notes, and clear feature environments reduce the anxiety that comes from uncertainty.  
+
+When something goes wrong, how a manager reacts defines the system. If the first response is blame, the system punishes learning. If the first response is curiosity, the system reinforces trust.  
+
+These are small things, but together they build consistency. And consistency is what turns safety from a feeling into a system.  
+
+## When managers create noise
+
+A few years ago, I realized how fragile trust can be. During a review, I interrupted an engineer mid sentence to correct a detail. I thought I was being efficient. Later, she told me she stopped sharing early ideas after that meeting.  
+
+Looking for language to explain what went wrong, I read *Radical Candor* by Kim Scott. She worked at Google and Apple, and her book explains a simple idea: **great leaders both care personally and challenge directly**. It’s not about being nice or avoiding conflict. It’s about creating enough trust that people can be honest, even when it’s uncomfortable.  
+
+Since then, I’ve tried to listen longer before reacting. It’s slower in the moment, but faster in the long run.  
+
+## Build for resilience, not perfection
+
+We design systems that recover quickly when things break. Teams deserve the same kind of design.  
+The goal isn’t to remove every risk, but to make it easy to talk about them, learn, and adjust.  
+
+Psychological safety isn’t decoration. It’s the foundation that lets a team move fast without breaking itself.  
+It’s a kind of invisible infrastructure, quiet, sturdy, and built one conversation at a time.
+
+## Recommended reading
+
+<BookCard 
+  title="Radical Candor" 
+  author="Kim Scott" 
+  cover="radicalcandor.jpg"
+  description="The idea is simple: You don't have to choose between being a pushover and a jerk. Using Radical Candor—avoiding the perils of Obnoxious Aggression, Manipulative Insincerity, and Ruinous Empathy — you can be kind and clear at the same time." 
+  link="https://www.booksellers.ca/livres/radical-candor-fully-revised-updated-edition-kim-scott-9781250235374.html"
+  isbn="9781250235374"
+/>
+
+<BookCard 
+  title="Peopleware: Productive Projects and Teams" 
+  author="Tom DeMarco & Timothy Lister" 
+  cover="peopleware.jpg"
+  description="A classic on the human side of software engineering. Explains why culture and collaboration matter more than tools or processes." 
+  link="https://www.indiebookstores.ca/book/9780321934116/"
+  isbn="9780321934116"
+/>

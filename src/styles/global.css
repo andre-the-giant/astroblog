@@ -118,7 +118,7 @@ html {
     text-decoration: none;
   }
 /* Article side note */
-aside{
+.sidenote{
     padding: 1rem;
     margin-left:1rem;
     margin-bottom:2rem;
@@ -127,32 +127,32 @@ aside{
     font-size:.8rem;
 }
 
-aside h3{ 
+.sidenote h3{ 
   margin :0 0 1rem 0;
 }
 
-aside ul{
+.sidenote ul{
   margin:0 0 0 1rem;
   padding:0;
 }
-aside ol {
+.sidenote ol {
   list-style: none;
   counter-reset: aside-counter;
   margin:0;
   padding:0;
 }
-aside ol li {
+.sidenote ol li {
   counter-increment: aside-counter;
   position: relative;
   padding:0 0 0 2rem;
   margin: 0 0 1rem 0;
 }
 
-aside ol li:last-child {
+.sidenote ol li:last-child {
   margin-bottom: 0;
 }
 
-aside li:before {
+.sidenote li:before {
   content: counter(aside-counter);
   position: absolute;
   left: 0;
@@ -161,25 +161,25 @@ aside li:before {
   color:var(--color-accent);
   font-family: var(--font-heading);
 }
-aside ol li h4{
+.sidenote ol li h4{
   font-family: var(--font-default);
   font-weight:700;
   font-size:1rem;
   margin:0;
 }
-aside ol li p{
+.sidenote ol li p{
   margin:0;
   padding:0;
 }
 @media only screen and (min-width: 634px) {
-    aside{
+    .sidenote{
         float:right;
         width:33%;
         }
         body{padding:0 1rem}
 }
 @media only screen and (min-width: 1000px) {
-    aside{
+    .sidenote{
         margin-right:-20%;
         width:40%
         }

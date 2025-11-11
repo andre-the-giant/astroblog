@@ -9,7 +9,7 @@ image:
 tags: ["incident-response", "postmortem", "communication", "psychological-safety", "leadership", "team-support", "bug-triage", "manager-on-call", "cross-functional", "process", "trust"]
 ---
 ## What to do when incidents happen, and how to be ready before they do
-<aside>
+<aside class="sidenote">
 <h3>5 things that make a good incident response process</h3>
 <ol>
     <li>

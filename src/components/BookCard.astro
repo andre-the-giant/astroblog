@@ -1,0 +1,40 @@
+---
+import { Picture } from 'astro:assets';
+import defaultImage from '../assets/images/default.jpg';
+const { title, author, description, link, isbn , cover} = Astro.props;
+const imageMap = import.meta.glob('../assets/images/books/*', { eager: true });
+const resolveImage = (image) => {
+  return image && imageMap[`../assets/images/books/${cover}`]
+    ? imageMap[`../assets/images/books/${cover}`].default
+    : null;
+};
+const imagePath = resolveImage(cover) || defaultImage;
+
+---
+
+<aside class="bookcard">
+    <div class="cover"><a href={link} target="_blank" aria-hidden="true" tabindex="-1"><Picture src={imagePath} alt={`Cover of ${title}`} /></a></div>
+    <div class="details">
+        <h3 class="details_title">{title}</h3>
+        <div class="details_author">Author: {author} - <span class="details_isbn">ISBN: {isbn}</span></div>
+        <div class="details_description">{description}</div>
+        <div class="details_link"><a href={link} target="_blank" class="button">More info <span class="sr-only"> about {title}</span></a></div>
+    </div>
+</aside>
+<style>
+    .bookcard{
+        display: grid;
+        gap:1rem;
+        grid-template-columns: 150px 1fr;
+        margin-bottom: 1rem;
+    }
+    .cover{
+        img{max-width: 100%;height:auto}
+    }
+    .details{}
+    .details_isbn{font-size:.8rem;}
+    .details_description{font-size:1rem;margin-top:1rem}
+    .details_link{
+        margin-top:1rem;
+    }
+</style>

@@ -36,7 +36,7 @@ The first is the **retrospective**. Not just a place to talk about tickets or ti
 
 The second is the **anonymous pulse check**. Not everyone feels comfortable speaking up in a group. A simple survey can tell you how people are feeling about collaboration, feedback, clarity, and trust. It's not about metrics. It's about catching friction early. If someone's feeling isolated, unheard, or frustrated, you want to know that before it turns into disengagement.
 
-<aside>
+<aside class="sidenote">
 <h3>A few questions I like to include in a README</h3>
 - How do you like to receive feedback?
 - What should someone avoid when talking to you?

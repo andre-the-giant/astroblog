@@ -6,7 +6,7 @@ description: "Exploring why having coding experience is essential for effective 
 image:
   url: "coding-engineering-manager.jpg"
   alt: "Engineering manager discussing code"
-tags: [ "leadership", "coding", "team-culture", "developer-experience", "mentorship", "technical-decision-making"]
+tags: [ "leadership", "coding", "team-culture", "developer-experience", "mentorship", "technical-decision-making", "psychological-safety"]
 ---
 Dealing with code is just one aspect of being an engineering manager. You make important technical decisions, lead teams, develop strategies, and interact with stakeholders. However, the question of how crucial coding experience is for an engineering manager is still up for debate. Does managing developers effectively need coding knowledge?
 

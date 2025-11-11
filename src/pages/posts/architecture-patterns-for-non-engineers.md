@@ -14,7 +14,7 @@ For non-engineers, understanding these high-level choices can help in planning, 
 That's why I'm going to review of the most common architecture for the web and review their pros and cons. 
 
 ## The classic monolith
-<aside>
+<aside class="sidenote">
 <h3>Tech stack example</h3>
 <p>Ruby on Rails, Django, Laravel, Spring MVC</p>
 </aside>
@@ -28,7 +28,7 @@ Teams can add features quickly without worrying about multiple systems or how th
 <p>Can become a tangled mess over time. Hard to scale only parts of the system. Longer to deploy as the application grows.</p>
 
 ## Microservices
-<aside><h3>Tech stack example</h3>
+<aside class="sidenote"><h3>Tech stack example</h3>
 Spring Boot, Express.js, Go services, Docker, Kubernetes  
 </aside>
 
@@ -47,7 +47,7 @@ If each box is hosted on a different server, it can induce latency. On another h
 
 
 ## The modular monolith
-<aside><h3>Tech stack example</h3>
+<aside class="sidenote"><h3>Tech stack example</h3>
 <p>Java projects with clear modules, Python apps split by area, .NET feature folders  </p>
 </aside>
 
@@ -63,7 +63,7 @@ This pattern keeps the convenience of one big box but divides it inside into wel
 
 ## Separate front end and back end
 
-<aside><h3>Tech stack example</h3>
+<aside class="sidenote"><h3>Tech stack example</h3>
 <p>React or Vue for the user interface + any back-end service for data handling  </p>
 </aside>
 
@@ -77,7 +77,7 @@ Often, the part users interact with (front end) is built and deployed separately
 
 
 ## Serverless functions
-<aside><h3>Tech stack example</h3>
+<aside class="sidenote"><h3>Tech stack example</h3>
 <p>AWS Lambda, Azure Functions, Cloudflare Workers  </p>
 </aside>
 Serverless means writing small pieces of code that run only when needed, without managing servers. It's like electricity you pay for by the minute. It can scale automatically, but it can also bring challenges with troubleshooting, startup delays and monitoring many tiny functions.
@@ -90,7 +90,7 @@ Serverless means writing small pieces of code that run only when needed, without
 
 
 ## Jamstack and static-first sites
-<aside>
+<aside class="sidenote">
 <h3>Tech stack example</h3>
 <p>Next.js or Hugo for static pages + headless CMS (Contentful, Sanity) + CDN (Netlify, Vercel)  </p>
 </aside>
@@ -104,7 +104,7 @@ Jamstack builds most pages ahead of time and serves them as plain files from a g
 <p>Complexity for real-time updates or personalized content. Build times grow with site size.</p>
 
 ## The new kids on the block
-<aside><h3>Tech stack example</h3>
+<aside class="sidenote"><h3>Tech stack example</h3>
 <p>
   Apache Kafka, AWS EventBridge, RabbitMQ for event-driven<br>
   Domain-driven tools like Domain-Driven Design libraries (e.g. NestJS DDD, Axon Framework)
